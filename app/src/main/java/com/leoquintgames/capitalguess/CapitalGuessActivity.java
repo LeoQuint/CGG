@@ -32,6 +32,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MapStyleOptions;
 
+
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -42,6 +43,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
 import android.widget.RelativeLayout;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -77,10 +79,17 @@ public class CapitalGuessActivity extends AppCompatActivity
     private TextView m_Clue_Two_Display;
     private TextView m_Clue_Three_Display;
     private TextView m_Clue_Four_Display;
+    //radio buttons
+    private RadioButton m_RadioDiff_0;
+    private RadioButton m_RadioDiff_1;
+    private RadioButton m_RadioDiff_2;
+    private RadioButton m_RadioDiff_3;
+
     //endregion
 
     //region Game Variables
     private int m_NumberOfRounds = 10;
+    private int m_CurrentRound = 0;
     private int m_Zoom = 16;
     private int m_CurrentGuess = 0;
     private boolean m_HasClues = true;
@@ -100,6 +109,8 @@ public class CapitalGuessActivity extends AppCompatActivity
     private GoogleApiClient mGoogleApiClient;
     boolean mExplicitSignOut = false;
     boolean mInSignInFlow = false;
+    private int mGoodGuessesInRow =0;
+
     //endregion
 
     @Override
@@ -123,6 +134,8 @@ public class CapitalGuessActivity extends AppCompatActivity
         MapFragment mapFragment =
                 (MapFragment) getFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        //region References to UI
         //Referencing menues
         m_MainMenu = (FrameLayout) findViewById(R.id.Main_Menu);//Layer->0
         m_GameOptionsMenu = (FrameLayout) findViewById(R.id.Game_Options_Menu);//Layer->1
@@ -138,6 +151,12 @@ public class CapitalGuessActivity extends AppCompatActivity
         m_Clue_Two_Display = (TextView) findViewById((R.id.clue2));
         m_Clue_Three_Display = (TextView) findViewById((R.id.clue3));
         m_Clue_Four_Display = (TextView) findViewById((R.id.clue4));
+        //referencing the radio buttons
+        m_RadioDiff_0 = (RadioButton) findViewById(R.id.diffselect0);
+        m_RadioDiff_1 = (RadioButton) findViewById(R.id.diffselect1);
+        m_RadioDiff_2 = (RadioButton) findViewById(R.id.diffselect2);
+        m_RadioDiff_3 = (RadioButton) findViewById(R.id.diffselect3);
+        //endregion
 
 
         final Button btn_Settings = (Button) findViewById(R.id.btn_Settings);
@@ -298,6 +317,13 @@ public class CapitalGuessActivity extends AppCompatActivity
 
     private void setNewLocation() throws JSONException {
         m_Zoom = 16;
+        m_CurrentGuess = 0;
+        m_CurrentRound++;
+        Log.v(DEBUGTAG, "Round #" + m_CurrentRound + " of " + m_NumberOfRounds);
+        if(m_CurrentRound > m_NumberOfRounds){
+            endGame();
+            return;
+        }
         boolean previouslyDone = false;
         do{
             currentRandomIndex = (int)Math.floor( Math.random() * (double)m_NumberOfCountries);
@@ -350,7 +376,7 @@ public class CapitalGuessActivity extends AppCompatActivity
     }
     //Submitting a new guess
     public void submitGuess(String input) throws JSONException {
-        UnlockAchievement(String.valueOf(R.string.achievement_thanks_for_trying_it_out));
+        unlockAchievement(getString(R.string.achievement_thanks_for_trying_it_out));
         EditText editField = (EditText) findViewById(R.id.input_player);
         View view = this.getCurrentFocus();
         if(input.equalsIgnoreCase(""))
@@ -365,6 +391,13 @@ public class CapitalGuessActivity extends AppCompatActivity
         String officialName = m_Data.get(currentRandomIndex).getJSONObject("name").getString("official");
         Log.v(DEBUGTAG, input.toUpperCase());
         Log.v(DEBUGTAG, commonName.toUpperCase());
+
+        if(input.equalsIgnoreCase("sprouts") && commonName.equalsIgnoreCase("belgium")){
+            unlockAchievement(getString(R.string.achievement_eat_them_all_or_no_dessert));
+        }
+        if(input.equalsIgnoreCase("hilton") && commonName.equalsIgnoreCase("france")){
+            unlockAchievement(getString(R.string.achievement_really));
+        }
         if(input.equalsIgnoreCase(commonName) || input.equalsIgnoreCase(officialName))
         {
             goodGuess();
@@ -384,19 +417,34 @@ public class CapitalGuessActivity extends AppCompatActivity
     }
 
     public void goodGuess() throws JSONException {
+        mGoodGuessesInRow++;
+        if(mGoodGuessesInRow >= 5){
+            unlockAchievement(getString(R.string.achievement_5_in_a_row));
+        }
+
         setNewLocation();
-        m_CurrentGuess = 0;
+
         try { displayClues(); } catch (JSONException e) { e.printStackTrace(); }
         return;
     }
 
-    public void badGuess()
-    {
+    public void badGuess() throws JSONException {
+        mGoodGuessesInRow = 0;
         m_CurrentGuess++;
+        if(m_CurrentGuess >= 4){
+            Log.v(DEBUGTAG, "Current guess " + m_CurrentGuess);
+            setNewLocation();
+        }
         try { displayClues(); } catch (JSONException e) { e.printStackTrace(); }
         zoomOutCamera(m_CurrentGuess);
         return;
     }
+    public void endGame(){
+        changeMenu(4);
+        Log.v(DEBUGTAG, "End of game!");
+        incrementAchievement(getString(R.string.achievement_just_one_more_game____), 1);
+    }
+
     public void displayClues() throws JSONException {
         if(!m_HasClues){
             m_Clue_One_Display.setVisibility(View.GONE);
@@ -513,6 +561,47 @@ public class CapitalGuessActivity extends AppCompatActivity
     }
     //endregion
 
+    public void onRadioButtonClicked(View view) throws IOException, JSONException {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.diffselect0:
+                if (checked){
+                    m_RadioDiff_1.setBackground(getDrawable(R.drawable.star_empty));
+                    m_RadioDiff_2.setBackground(getDrawable(R.drawable.star_empty));
+                    m_RadioDiff_3.setBackground(getDrawable(R.drawable.star_empty));
+                    loadCountryList(0);
+                }
+                    break;
+            case R.id.diffselect1:
+                if (checked){
+                    m_RadioDiff_1.setBackground(getDrawable(R.drawable.start_full));
+                    m_RadioDiff_2.setBackground(getDrawable(R.drawable.star_empty));
+                    m_RadioDiff_3.setBackground(getDrawable(R.drawable.star_empty));
+                    loadCountryList(1);
+                }
+                    break;
+            case R.id.diffselect2:
+                if (checked){
+                    m_RadioDiff_1.setBackground(getDrawable(R.drawable.start_full));
+                    m_RadioDiff_2.setBackground(getDrawable(R.drawable.start_full));
+                    m_RadioDiff_3.setBackground(getDrawable(R.drawable.star_empty));
+                    loadCountryList(2);
+                }
+                    break;
+            case R.id.diffselect3:
+                if (checked){
+                    m_RadioDiff_1.setBackground(getDrawable(R.drawable.start_full));
+                    m_RadioDiff_2.setBackground(getDrawable(R.drawable.start_full));
+                    m_RadioDiff_3.setBackground(getDrawable(R.drawable.start_full));
+                    loadCountryList(3);
+                }
+                    break;
+        }
+    }
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -595,11 +684,20 @@ public class CapitalGuessActivity extends AppCompatActivity
         findViewById(R.id.sign_out_button).setVisibility(View.GONE);
     }
 
-    public void UnlockAchievement(String achievement){
+    public void unlockAchievement(String achievement){
         Log.v(DEBUGTAG, achievement);
         if (mGoogleApiClient != null && mGoogleApiClient.isConnected()) {
             // Call a Play Games services API method, for example:
             Games.Achievements.unlock(mGoogleApiClient, achievement);
+        } else {
+            Log.v(DEBUGTAG, "User not signed in!");
+        }
+    }
+    public void incrementAchievement(String achievement, int num){
+        Log.v(DEBUGTAG, achievement);
+        if (mGoogleApiClient != null && mGoogleApiClient.isConnected()) {
+            // Call a Play Games services API method, for example:
+            Games.Achievements.increment(mGoogleApiClient, achievement, num);
         } else {
             Log.v(DEBUGTAG, "User not signed in!");
         }
