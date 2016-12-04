@@ -15,6 +15,12 @@
  */
 
 package com.leoquintgames.capitalguess;
+
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.games.Games;
+
+import com.google.example.games.basegameutils.BaseGameUtils;
 import java.lang.Math;
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,11 +29,12 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.model.GroundOverlay;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MapStyleOptions;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -36,8 +43,6 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.SeekBar;
-import android.widget.SeekBar.OnSeekBarChangeListener;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONArray;
@@ -50,12 +55,15 @@ import android.content.Context;
 
 
 public class CapitalGuessActivity extends AppCompatActivity
-        implements OnSeekBarChangeListener, OnMapReadyCallback,
-        GoogleMap.OnGroundOverlayClickListener {
+        implements OnMapReadyCallback,
+        GoogleApiClient.ConnectionCallbacks,
+        GoogleApiClient.OnConnectionFailedListener, View.OnClickListener {
 
-
+    private static final String DEBUGTAG = "CapitalGuessDebug";
+    private GoogleMap m_Map;
     private static LatLng m_MapCenter = new LatLng(43.6761, -79.4105);
 
+    //region UI references
     private FrameLayout m_MainMenu;
     private FrameLayout m_GameOptionsMenu;
     private LinearLayout m_SettingsMenu;
@@ -69,11 +77,9 @@ public class CapitalGuessActivity extends AppCompatActivity
     private TextView m_Clue_Two_Display;
     private TextView m_Clue_Three_Display;
     private TextView m_Clue_Four_Display;
+    //endregion
 
-    private static final String DEBUGTAG = "CapitalGuessDebug";
-    private GoogleMap m_Map;
-
-    //Game Variables
+    //region Game Variables
     private int m_NumberOfRounds = 10;
     private int m_Zoom = 16;
     private int m_CurrentGuess = 0;
@@ -83,13 +89,36 @@ public class CapitalGuessActivity extends AppCompatActivity
     private ArrayList<Integer> m_PreviouslySelectedCountries = new ArrayList<Integer>();
     private ArrayList<JSONObject> m_Data = new ArrayList<JSONObject>();
     private int currentRandomIndex = 0;
+    //endregion
+
+    //region Google play services
+    private static int RC_SIGN_IN = 9001;
+
+    private boolean mResolvingConnectionFailure = false;
+    private boolean mAutoStartSignInflow = true;
+    private boolean mSignInClicked = false;
+    private GoogleApiClient mGoogleApiClient;
+    boolean mExplicitSignOut = false;
+    boolean mInSignInFlow = false;
+    //endregion
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Create the Google Api Client with access to the Play Games services
+        mGoogleApiClient = new GoogleApiClient.Builder(this)
+                .addConnectionCallbacks(this)
+                .addOnConnectionFailedListener(this)
+                .addApi(Games.API).addScope(Games.SCOPE_GAMES)
+                // add other APIs and scopes here as needed
+                .build();
+
+
         setContentView(R.layout.capital_guess);
 
-        Log.v(DEBUGTAG, "----OnCreate called----");
+        //findViewById(R.id.sign_in_button).setOnClickListener((View.OnClickListener) this);
+        //findViewById(R.id.sign_out_button).setOnClickListener((View.OnClickListener) this);
 
         MapFragment mapFragment =
                 (MapFragment) getFragmentManager().findFragmentById(R.id.map);
@@ -200,20 +229,7 @@ public class CapitalGuessActivity extends AppCompatActivity
         }
     }
 
-    @Override
-    public void onStopTrackingTouch(SeekBar seekBar) {
-    }
-
-    @Override
-    public void onStartTrackingTouch(SeekBar seekBar) {
-    }
-
-    @Override
-    public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-        String logged = Integer.toString(seekBar.getProgress());
-        Log.v(DEBUGTAG, logged );
-    }
-
+    //region Navigation
     private void changeMenu(int layer){
         switch(layer){
             case 0: //MainMenu Active
@@ -258,14 +274,9 @@ public class CapitalGuessActivity extends AppCompatActivity
                 m_GameBottomBarOverlay.setVisibility(View.GONE);
         }
     }
+    //endregion
 
-    /**
-     * Toggles the visibility between 100% and 50% when a {@link GroundOverlay} is clicked.
-     */
-    @Override
-    public void onGroundOverlayClick(GroundOverlay groundOverlay) {
-    }
-
+    //region Core Gameplay Functions
     public String loadJSONFromAsset(String filename) throws IOException {
         Log.v(DEBUGTAG, "Loading JSON");
         InputStream is = getResources().openRawResource(R.raw.country_list_50);
@@ -339,6 +350,7 @@ public class CapitalGuessActivity extends AppCompatActivity
     }
     //Submitting a new guess
     public void submitGuess(String input) throws JSONException {
+        UnlockAchievement(String.valueOf(R.string.achievement_thanks_for_trying_it_out));
         EditText editField = (EditText) findViewById(R.id.input_player);
         View view = this.getCurrentFocus();
         if(input.equalsIgnoreCase(""))
@@ -478,7 +490,9 @@ public class CapitalGuessActivity extends AppCompatActivity
         }
 
     }
-    //Getters and setters for game variables.
+    //endregion
+
+    //region Getters and setters
     public void setNumberOfRounds(int num){
         m_NumberOfRounds = num;
     }
@@ -497,6 +511,97 @@ public class CapitalGuessActivity extends AppCompatActivity
     public boolean getMapInfo(){
         return m_HasMapInfo;
     }
+    //endregion
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if (!mInSignInFlow && !mExplicitSignOut) {
+            // auto sign in
+            mGoogleApiClient.connect();
+        }
+    }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mGoogleApiClient.disconnect();
+    }
+
+    @Override
+    public void onClick(View view) {
+        if (view.getId() == R.id.sign_in_button) {
+            // start the asynchronous sign in flow
+            mSignInClicked = true;
+            mGoogleApiClient.connect();
+        }
+        else if (view.getId() == R.id.sign_out_button) {
+            // user explicitly signed out, so turn off auto sign in
+            mExplicitSignOut = true;
+            if (mGoogleApiClient != null && mGoogleApiClient.isConnected()) {
+                Games.signOut(mGoogleApiClient);
+                mGoogleApiClient.disconnect();
+                // sign out.
+                mSignInClicked = false;
+
+                // show sign-in button, hide the sign-out button
+                findViewById(R.id.sign_in_button).setVisibility(View.VISIBLE);
+                findViewById(R.id.sign_out_button).setVisibility(View.GONE);
+            }
+
+        }
+    }
+
+    @Override
+    public void onConnected(Bundle connectionHint) {
+        // show sign-out button, hide the sign-in button
+        findViewById(R.id.sign_in_button).setVisibility(View.GONE);
+        findViewById(R.id.sign_out_button).setVisibility(View.VISIBLE);
+
+        // (your code here: update UI, enable functionality that depends on sign in, etc)
+    }
+
+    @Override
+    public void onConnectionSuspended(int i) {
+
+    }
+
+    @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+        if (mResolvingConnectionFailure) {
+            // Already resolving
+            return;
+        }
+
+        // If the sign in button was clicked or if auto sign-in is enabled,
+        // launch the sign-in flow
+        if (mSignInClicked || mAutoStartSignInflow) {
+            mAutoStartSignInflow = false;
+            mSignInClicked = false;
+            mResolvingConnectionFailure = true;
+
+            // Attempt to resolve the connection failure using BaseGameUtils.
+            // The R.string.signin_other_error value should reference a generic
+            // error string in your strings.xml file, such as "There was
+            // an issue with sign in, please try again later."
+            if (!BaseGameUtils.resolveConnectionFailure(this,
+                    mGoogleApiClient, connectionResult,
+                    RC_SIGN_IN, getString(R.string.signin_other_error))) {
+                mResolvingConnectionFailure = false;
+            }
+        }
+
+        findViewById(R.id.sign_in_button).setVisibility(View.VISIBLE);
+        findViewById(R.id.sign_out_button).setVisibility(View.GONE);
+    }
+
+    public void UnlockAchievement(String achievement){
+        Log.v(DEBUGTAG, achievement);
+        if (mGoogleApiClient != null && mGoogleApiClient.isConnected()) {
+            // Call a Play Games services API method, for example:
+            Games.Achievements.unlock(mGoogleApiClient, achievement);
+        } else {
+            Log.v(DEBUGTAG, "User not signed in!");
+        }
+    }
 }

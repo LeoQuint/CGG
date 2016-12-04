@@ -34,7 +34,19 @@
             app:srcCompat="@drawable/main_bg"
             android:id="@+id/Game_Options_Background"
             android:scaleType="fitXY" />
+        <!-- sign-in button -->
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
+        <!-- sign-out button -->
+        <Button
+            android:id="@+id/sign_out_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:visibility="gone" />
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"

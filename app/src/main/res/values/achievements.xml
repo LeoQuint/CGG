@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Google Play game services IDs.
+Save this file as res/values/games-ids.xml in your project.
+-->
+<resources>
+    <string name="app_id">288676651844</string>
+    <string name="package_name">com.leoquintgames.mapdemo</string>
+    <string name="achievement_thanks_for_trying_it_out">CgkIxMbgs7MIEAIQAw</string>
+    <string name="achievement_eat_them_all_or_no_dessert">CgkIxMbgs7MIEAIQAQ</string>
+    <string name="achievement_really">CgkIxMbgs7MIEAIQAg</string>
+    <string name="achievement_5_in_a_row">CgkIxMbgs7MIEAIQBA</string>
+    <string name="achievement_just_one_more_game....">CgkIxMbgs7MIEAIQBQ</string>
+</resources>
