@@ -1,0 +1,19 @@
+[
+  {
+    "featureType": "administrative.country",
+    "elementType": "geometry.stroke",
+    "stylers": [{ "color": "#ff0000" },
+      {"weight" : 2.5}]},{
+  "featureType": "poi",
+  "elementType": "labels",
+  "stylers": [{ "visibility": "off" }]},{
+  "featureType": "administrative.country",
+  "elementType": "labels.text",
+  "stylers": [{ "visibility": "off" }]},{
+  "featureType": "road",
+  "elementType": "all",
+  "stylers": [{ "visibility": "on" }]},{
+  "featureType": "water",
+  "elementType": "labels",
+  "stylers": [{ "visibility": "on" }]}
+]

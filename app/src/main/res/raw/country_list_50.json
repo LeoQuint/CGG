@@ -1,0 +1,2121 @@
+[
+  {
+    "name": {
+      "common": "Argentina",
+      "official": "Argentine Republic",
+      "native": {
+        "grn": {
+          "official": "Argentine Republic",
+          "common": "Argentina"
+        },
+        "spa": {
+          "official": "Rep\u00fablica Argentina",
+          "common": "Argentina"
+        }
+      }
+    },
+    "tld": [".ar"],
+    "cca2": "AR",
+    "ccn3": "032",
+    "cca3": "ARG",
+    "currency": ["ARS"],
+    "callingCode": ["54"],
+    "capital": "Buenos Aires",
+    "altSpellings": ["AR", "Argentine Republic", "Rep\u00fablica Argentina"],
+    "region": "The Americas",
+    "subregion": "South America",
+    "languages": ["Guaran\u00ed", "Spanish"],
+    "translations": {
+      "cym": {"official": "Argentine Republic", "common": "Ariannin"},
+      "deu": {"official": "argentinische Republik", "common": "Argentinien"},
+      "fra": {"official": "R\u00e9publique argentine", "common": "Argentine"},
+      "hrv": {"official": "Argentinski Republika", "common": "Argentina"},
+      "ita": {"official": "Repubblica Argentina", "common": "Argentina"},
+      "jpn": {"official": "\u30a2\u30eb\u30bc\u30f3\u30c1\u30f3\u5171\u548c\u56fd", "common": "\u30a2\u30eb\u30bc\u30f3\u30c1\u30f3"},
+      "nld": {"official": "Argentijnse Republiek", "common": "Argentini\u00eb"},
+      "por": {"official": "Rep\u00fablica Argentina", "common": "Argentina"},
+      "rus": {"official": "\u0410\u0440\u0433\u0435\u043d\u0442\u0438\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430", "common": "\u0410\u0440\u0433\u0435\u043d\u0442\u0438\u043d\u0430"},
+      "spa": {"official": "Rep\u00fablica Argentina", "common": "Argentina"}
+    },
+    "latlng": [-34.603723, -58.381593],
+    "demonym": "Argentinean",
+    "landlocked": false,
+    "borders": ["BOL", "BRA", "CHL", "PRY", "URY"],
+    "area": 2780400
+  },
+  {
+    "name": {
+      "common": "Australia",
+      "official": "Commonwealth of Australia",
+      "native": {
+        "eng": {
+          "official": "Commonwealth of Australia",
+          "common": "Australia"
+        }
+      }
+    },
+    "tld": [".au"],
+    "cca2": "AU",
+    "ccn3": "036",
+    "cca3": "AUS",
+    "currency": ["AUD"],
+    "callingCode": ["61"],
+    "capital": "Canberra",
+    "altSpellings": ["AU"],
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "languages": ["English"],
+    "translations": {
+      "cym": {"official": "Commonwealth of Australia", "common": "Awstralia"},
+      "deu": {"official": "Commonwealth of Australia", "common": "Australien"},
+      "fra": {"official": "Commonwealth d'Australie", "common": "Australie"},
+      "hrv": {"official": "Commonwealth of Australia", "common": "Australija"},
+      "ita": {"official": "Commonwealth of Australia", "common": "Australia"},
+      "jpn": {"official": "\u30aa\u30fc\u30b9\u30c8\u30e9\u30ea\u30a2\u9023\u90a6", "common": "\u30aa\u30fc\u30b9\u30c8\u30e9\u30ea\u30a2"},
+      "nld": {"official": "Gemenebest van Australi\u00eb", "common": "Australi\u00eb"},
+      "por": {"official": "Comunidade da Austr\u00e1lia", "common": "Austr\u00e1lia"},
+      "rus": {"official": "\u0421\u043e\u0434\u0440\u0443\u0436\u0435\u0441\u0442\u0432\u043e \u0410\u0432\u0441\u0442\u0440\u0430\u043b\u0438\u0438", "common": "\u0410\u0432\u0441\u0442\u0440\u0430\u043b\u0438\u044f"},
+      "spa": {"official": "Mancomunidad de Australia", "common": "Australia"}
+    },
+    "latlng": [-35.282000, 149.128684],
+    "demonym": "Australian",
+    "landlocked": false,
+    "borders": [],
+    "area": 7692024
+  },
+  {
+    "name": {
+      "common": "Belgium",
+      "official": "Kingdom of Belgium",
+      "native": {
+        "deu": {
+          "official": "K\u00f6nigreich Belgien",
+          "common": "Belgien"
+        },
+        "fra": {
+          "official": "Royaume de Belgique",
+          "common": "Belgique"
+        },
+        "nld": {
+          "official": "Koninkrijk Belgi\u00eb",
+          "common": "Belgi\u00eb"
+        }
+      }
+    },
+    "tld": [".be"],
+    "cca2": "BE",
+    "ccn3": "056",
+    "cca3": "BEL",
+    "currency": ["EUR"],
+    "callingCode": ["32"],
+    "capital": "Brussels",
+    "altSpellings": ["BE", "Belgi\u00eb", "Belgie", "Belgien", "Belgique", "Kingdom of Belgium", "Koninkrijk Belgi\u00eb", "Royaume de Belgique", "K\u00f6nigreich Belgien"],
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "languages": ["German", "French", "Dutch"],
+    "translations": {
+      "cym": {"official": "Kingdom of Belgium", "common": "Gwlad Belg"},
+      "deu": {"official": "K\u00f6nigreich Belgien", "common": "Belgien"},
+      "fra": {"official": "Royaume de Belgique", "common": "Belgique"},
+      "hrv": {"official": "Kraljevina Belgija", "common": "Belgija"},
+      "ita": {"official": "Regno del Belgio", "common": "Belgio"},
+      "jpn": {"official": "\u30d9\u30eb\u30ae\u30fc\u738b\u56fd", "common": "\u30d9\u30eb\u30ae\u30fc"},
+      "nld": {"official": "Koninkrijk Belgi\u00eb", "common": "Belgi\u00eb"},
+      "por": {"official": "Reino da B\u00e9lgica", "common": "B\u00e9lgica"},
+      "rus": {"official": "\u041a\u043e\u0440\u043e\u043b\u0435\u0432\u0441\u0442\u0432\u043e \u0411\u0435\u043b\u044c\u0433\u0438\u044f", "common": "\u0411\u0435\u043b\u044c\u0433\u0438\u044f"},
+      "spa": {"official": "Reino de B\u00e9lgica", "common": "B\u00e9lgica"}
+    },
+    "latlng": [50.850340, 4.35171],
+    "demonym": "Belgian",
+    "landlocked": false,
+    "borders": ["FRA", "DEU", "LUX", "NLD"],
+    "area": 30528
+  },
+  {
+    "name": {
+      "common": "Brazil",
+      "official": "Federative Republic of Brazil",
+      "native": {
+        "por": {
+          "official": "Rep\u00fablica Federativa do Brasil",
+          "common": "Brasil"
+        }
+      }
+    },
+    "tld": [".br"],
+    "cca2": "BR",
+    "ccn3": "076",
+    "cca3": "BRA",
+    "currency": ["BRL"],
+    "callingCode": ["55"],
+    "capital": "Bras\u00edlia",
+    "altSpellings": ["BR", "Brasil", "Federative Republic of Brazil", "Rep\u00fablica Federativa do Brasil"],
+    "region": "The Americas",
+    "subregion": "South America",
+    "languages": ["Portuguese"],
+    "translations": {
+      "cym": {"official": "Federative Republic of Brazil", "common": "Brasil"},
+      "deu": {"official": "F\u00f6derativen Republik Brasilien", "common": "Brasilien"},
+      "fra": {"official": "R\u00e9publique f\u00e9d\u00e9rative du Br\u00e9sil", "common": "Br\u00e9sil"},
+      "hrv": {"official": "Savezne Republike Brazil", "common": "Brazil"},
+      "ita": {"official": "Repubblica federativa del Brasile", "common": "Brasile"},
+      "jpn": {"official": "\u30d6\u30e9\u30b8\u30eb\u9023\u90a6\u5171\u548c\u56fd", "common": "\u30d6\u30e9\u30b8\u30eb"},
+      "nld": {"official": "Federale Republiek Brazili\u00eb", "common": "Brazili\u00eb"},
+      "por": {"official": "Rep\u00fablica Federativa do Brasil", "common": "Brasil"},
+      "rus": {"official": "\u0424\u0435\u0434\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f", "common": "\u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f"},
+      "spa": {"official": "Rep\u00fablica Federativa del Brasil", "common": "Brasil"}
+    },
+    "latlng": [-15.794229, -47.882166],
+    "demonym": "Brazilian",
+    "landlocked": false,
+    "borders": ["ARG", "BOL", "COL", "GUF", "GUY", "PRY", "PER", "SUR", "URY", "VEN"],
+    "area": 8515767
+  },
+  {
+    "name": {
+      "common": "Canada",
+      "official": "Canada",
+      "native": {
+        "eng": {
+          "official": "Canada",
+          "common": "Canada"
+        },
+        "fra": {
+          "official": "Canada",
+          "common": "Canada"
+        }
+      }
+    },
+    "tld": [".ca"],
+    "cca2": "CA",
+    "ccn3": "124",
+    "cca3": "CAN",
+    "currency": ["CAD"],
+    "callingCode": ["1"],
+    "capital": "Ottawa",
+    "altSpellings": ["CA"],
+    "region": "The Americas",
+    "subregion": "Northern America",
+    "languages": ["English", "French"],
+    "translations": {
+      "cym": {"official": "Canada", "common": "Canada"},
+      "deu": {"official": "Kanada", "common": "Kanada"},
+      "fra": {"official": "Canada", "common": "Canada"},
+      "hrv": {"official": "Kanada", "common": "Kanada"},
+      "ita": {"official": "Canada", "common": "Canada"},
+      "jpn": {"official": "\u30ab\u30ca\u30c0", "common": "\u30ab\u30ca\u30c0"},
+      "nld": {"official": "Canada", "common": "Canada"},
+      "por": {"official": "Canad\u00e1", "common": "Canad\u00e1"},
+      "rus": {"official": "\u041a\u0430\u043d\u0430\u0434\u0430", "common": "\u041a\u0430\u043d\u0430\u0434\u0430"},
+      "spa": {"official": "Canad\u00e1", "common": "Canad\u00e1"}
+    },
+    "latlng": [45.421530, -75.697193],
+    "demonym": "Canadian",
+    "landlocked": false,
+    "borders": ["USA"],
+    "area": 9984670
+  },
+  {
+    "name": {
+      "common": "Switzerland",
+      "official": "Swiss Confederation",
+      "native": {
+        "fra": {
+          "official": "Conf\u00e9d\u00e9ration suisse",
+          "common": "Suisse"
+        },
+        "gsw": {
+          "official": "Schweizerische Eidgenossenschaft",
+          "common": "Schweiz"
+        },
+        "ita": {
+          "official": "Confederazione Svizzera",
+          "common": "Svizzera"
+        },
+        "roh": {
+          "official": "Confederaziun svizra",
+          "common": "Svizra"
+        }
+      }
+    },
+    "tld": [".ch"],
+    "cca2": "CH",
+    "ccn3": "756",
+    "cca3": "CHE",
+    "currency": ["CHE", "CHF", "CHW"],
+    "callingCode": ["41"],
+    "capital": "Bern",
+    "altSpellings": ["CH", "Swiss Confederation", "Schweiz", "Suisse", "Svizzera", "Svizra"],
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "languages": ["French", "Swiss German", "Italian", "Romansh"],
+    "translations": {
+      "deu": {"official": "schweizerischen Eidgenossenschaft", "common": "Schweiz"},
+      "fra": {"official": "Conf\u00e9d\u00e9ration suisse", "common": "Suisse"},
+      "hrv": {"official": "\u0161vicarska Konfederacija", "common": "\u0160vicarska"},
+      "ita": {"official": "Confederazione svizzera", "common": "Svizzera"},
+      "jpn": {"official": "\u30b9\u30a4\u30b9\u9023\u90a6", "common": "\u30b9\u30a4\u30b9"},
+      "nld": {"official": "Zwitserse Confederatie", "common": "Zwitserland"},
+      "por": {"official": "Confedera\u00e7\u00e3o Su\u00ed\u00e7a", "common": "Su\u00ed\u00e7a"},
+      "rus": {"official": "\u0428\u0432\u0435\u0439\u0446\u0430\u0440\u0441\u043a\u0430\u044f \u041a\u043e\u043d\u0444\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u044f", "common": "\u0428\u0432\u0435\u0439\u0446\u0430\u0440\u0438\u044f"},
+      "spa": {"official": "Confederaci\u00f3n Suiza", "common": "Suiza"}
+    },
+    "latlng": [46.947922, 7.444608],
+    "demonym": "Swiss",
+    "landlocked": true,
+    "borders": ["AUT", "FRA", "ITA", "LIE", "DEU"],
+    "area": 41284
+  },
+  {
+    "name": {
+      "common": "Chile",
+      "official": "Republic of Chile",
+      "native": {
+        "spa": {
+          "official": "Rep\u00fablica de Chile",
+          "common": "Chile"
+        }
+      }
+    },
+    "tld": [".cl"],
+    "cca2": "CL",
+    "ccn3": "152",
+    "cca3": "CHL",
+    "currency": ["CLF", "CLP"],
+    "callingCode": ["56"],
+    "capital": "Santiago",
+    "altSpellings": ["CL", "Republic of Chile", "Rep\u00fablica de Chile"],
+    "region": "The Americas",
+    "subregion": "South America",
+    "languages": ["Spanish"],
+    "translations": {
+      "cym": {"official": "Republic of Chile", "common": "Chile"},
+      "deu": {"official": "Republik Chile", "common": "Chile"},
+      "fra": {"official": "R\u00e9publique du Chili", "common": "Chili"},
+      "hrv": {"official": "Republika \u010cile", "common": "\u010cile"},
+      "ita": {"official": "Repubblica del Cile", "common": "Cile"},
+      "jpn": {"official": "\u30c1\u30ea\u5171\u548c\u56fd", "common": "\u30c1\u30ea"},
+      "nld": {"official": "Republiek Chili", "common": "Chili"},
+      "por": {"official": "Rep\u00fablica do Chile", "common": "Chile"},
+      "rus": {"official": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0427\u0438\u043b\u0438", "common": "\u0427\u0438\u043b\u0438"},
+      "spa": {"official": "Rep\u00fablica de Chile", "common": "Chile"}
+    },
+    "latlng": [-33.469120, -70.641997],
+    "demonym": "Chilean",
+    "landlocked": false,
+    "borders": ["ARG", "BOL", "PER"],
+    "area": 756102
+  },
+  {
+    "name": {
+      "common": "China",
+      "official": "People's Republic of China",
+      "native": {
+        "cmn": {
+          "official": "\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd",
+          "common": "\u4e2d\u56fd"
+        }
+      }
+    },
+    "tld": [".cn", ".\u4e2d\u56fd", ".\u4e2d\u570b", ".\u516c\u53f8", ".\u7f51\u7edc"],
+    "cca2": "CN",
+    "ccn3": "156",
+    "cca3": "CHN",
+    "currency": ["CNY"],
+    "callingCode": ["86"],
+    "capital": "Beijing",
+    "altSpellings": ["CN", "Zh\u014dnggu\u00f3", "Zhongguo", "Zhonghua", "People's Republic of China", "\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd", "Zh\u014dnghu\u00e1 R\u00e9nm\u00edn G\u00f2ngh\u00e9gu\u00f3"],
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "languages": ["Mandarin"],
+    "translations": {
+      "cym": {"official": "People's Republic of China", "common": "Tsieina"},
+      "deu": {"official": "Volksrepublik China", "common": "China"},
+      "fra": {"official": "R\u00e9publique populaire de Chine", "common": "Chine"},
+      "hrv": {"official": "Narodna Republika Kina", "common": "Kina"},
+      "ita": {"official": "Repubblica popolare cinese", "common": "Cina"},
+      "jpn": {"official": "\u4e2d\u83ef\u4eba\u6c11\u5171\u548c\u56fd", "common": "\u4e2d\u56fd"},
+      "nld": {"official": "Volksrepubliek China", "common": "China"},
+      "por": {"official": "Rep\u00fablica Popular da China", "common": "China"},
+      "rus": {"official": "\u041d\u0430\u0440\u043e\u0434\u043d\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u041a\u0438\u0442\u0430\u0439", "common": "\u041a\u0438\u0442\u0430\u0439"},
+      "spa": {"official": "Rep\u00fablica Popular de China", "common": "China"}
+    },
+    "latlng": [39.904211, 116.407395],
+    "demonym": "Chinese",
+    "landlocked": false,
+    "borders": ["AFG", "BTN", "MMR", "HKG", "IND", "KAZ", "PRK", "KGZ", "LAO", "MAC", "MNG", "PAK", "RUS", "TJK", "VNM"],
+    "area": 9706961
+  },
+  {
+    "name": {
+      "common": "Germany",
+      "official": "Federal Republic of Germany",
+      "native": {
+        "deu": {
+          "official": "Bundesrepublik Deutschland",
+          "common": "Deutschland"
+        }
+      }
+    },
+    "tld": [".de"],
+    "cca2": "DE",
+    "ccn3": "276",
+    "cca3": "DEU",
+    "currency": ["EUR"],
+    "callingCode": ["49"],
+    "capital": "Berlin",
+    "altSpellings": ["DE", "Federal Republic of Germany", "Bundesrepublik Deutschland"],
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "languages": ["German"],
+    "translations": {
+      "deu": {"official": "Bundesrepublik Deutschland", "common": "Deutschland"},
+      "fra": {"official": "R\u00e9publique f\u00e9d\u00e9rale d'Allemagne", "common": "Allemagne"},
+      "hrv": {"official": "Njema\u010dka Federativna Republika", "common": "Njema\u010dka"},
+      "ita": {"official": "Repubblica federale di Germania", "common": "Germania"},
+      "jpn": {"official": "\u30c9\u30a4\u30c4\u9023\u90a6\u5171\u548c\u56fd", "common": "\u30c9\u30a4\u30c4"},
+      "nld": {"official": "Bondsrepubliek Duitsland", "common": "Duitsland"},
+      "por": {"official": "Rep\u00fablica Federal da Alemanha", "common": "Alemanha"},
+      "rus": {"official": "\u0424\u0435\u0434\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0413\u0435\u0440\u043c\u0430\u043d\u0438\u044f", "common": "\u0413\u0435\u0440\u043c\u0430\u043d\u0438\u044f"},
+      "spa": {"official": "Rep\u00fablica Federal de Alemania", "common": "Alemania"}
+    },
+    "latlng": [52.520007, 13.404954],
+    "demonym": "German",
+    "landlocked": false,
+    "borders": ["AUT", "BEL", "CZE", "DNK", "FRA", "LUX", "NLD", "POL", "CHE"],
+    "area": 357114
+  },
+  {
+    "name": {
+      "common": "Egypt",
+      "official": "Arab Republic of Egypt",
+      "native": {
+        "ara": {
+          "official": "\u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u0645\u0635\u0631 \u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+          "common": "\u0645\u0635\u0631"
+        }
+      }
+    },
+    "tld": [".eg", ".\u0645\u0635\u0631"],
+    "cca2": "EG",
+    "ccn3": "818",
+    "cca3": "EGY",
+    "currency": ["EGP"],
+    "callingCode": ["20"],
+    "capital": "Cairo",
+    "altSpellings": ["EG", "Arab Republic of Egypt"],
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "languages": ["Arabic"],
+    "translations": {
+      "cym": {"official": "Arab Republic of Egypt", "common": "Yr Aifft"},
+      "deu": {"official": "Arabische Republik \u00c4gypten", "common": "\u00c4gypten"},
+      "fra": {"official": "R\u00e9publique arabe d'\u00c9gypte", "common": "\u00c9gypte"},
+      "hrv": {"official": "Arapska Republika Egipat", "common": "Egipat"},
+      "ita": {"official": "Repubblica araba d'Egitto", "common": "Egitto"},
+      "jpn": {"official": "\u30a8\u30b8\u30d7\u30c8\u00b7\u30a2\u30e9\u30d6\u5171\u548c\u56fd", "common": "\u30a8\u30b8\u30d7\u30c8"},
+      "nld": {"official": "Arabische Republiek Egypte", "common": "Egypte"},
+      "por": {"official": "Rep\u00fablica \u00c1rabe do Egipto", "common": "Egito"},
+      "rus": {"official": "\u0410\u0440\u0430\u0431\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0415\u0433\u0438\u043f\u0435\u0442", "common": "\u0415\u0433\u0438\u043f\u0435\u0442"},
+      "spa": {"official": "Rep\u00fablica \u00c1rabe de Egipto", "common": "Egipto"}
+    },
+    "latlng": [30.044420, 31.235712],
+    "demonym": "Egyptian",
+    "landlocked": false,
+    "borders": ["ISR", "LBY", "SDN"],
+    "area": 1002450
+  },
+  {
+    "name": {
+      "common": "Spain",
+      "official": "Kingdom of Spain",
+      "native": {
+        "cat": {
+          "official": "Regne d'Espanya",
+          "common": "Espanya"
+        },
+        "eus": {
+          "official": "Espainiako Erresuma",
+          "common": "Espainia"
+        },
+        "glg": {
+          "official": "Reino de Espa\u00f1a",
+          "common": ""
+        },
+        "oci": {
+          "official": "Reialme d'Espanha",
+          "common": "Espanha"
+        },
+        "spa": {
+          "official": "Reino de Espa\u00f1a",
+          "common": "Espa\u00f1a"
+        }
+      }
+    },
+    "tld": [".es"],
+    "cca2": "ES",
+    "ccn3": "724",
+    "cca3": "ESP",
+    "currency": ["EUR"],
+    "callingCode": ["34"],
+    "capital": "Madrid",
+    "altSpellings": ["ES", "Kingdom of Spain", "Reino de Espa\u00f1a"],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "languages": ["Catalan", "Galician", "Occitan", "Spanish"],
+    "translations": {
+      "deu": {"official": "K\u00f6nigreich Spanien", "common": "Spanien"},
+      "fra": {"official": "Royaume d'Espagne", "common": "Espagne"},
+      "hrv": {"official": "Kraljevina \u0160panjolska", "common": "\u0160panjolska"},
+      "ita": {"official": "Regno di Spagna", "common": "Spagna"},
+      "jpn": {"official": "\u30b9\u30da\u30a4\u30f3\u738b\u56fd", "common": "\u30b9\u30da\u30a4\u30f3"},
+      "nld": {"official": "Koninkrijk Spanje", "common": "Spanje"},
+      "por": {"official": "Reino de Espanha", "common": "Espanha"},
+      "rus": {"official": "\u041a\u043e\u0440\u043e\u043b\u0435\u0432\u0441\u0442\u0432\u043e \u0418\u0441\u043f\u0430\u043d\u0438\u044f", "common": "\u0418\u0441\u043f\u0430\u043d\u0438\u044f"},
+      "spa": {"official": "Reino de Espa\u00f1a", "common": "Espa\u00f1a"}
+    },
+    "latlng": [40.416775, -3.70379],
+    "demonym": "Spanish",
+    "landlocked": false,
+    "borders": ["AND", "FRA", "GIB", "PRT", "MAR"],
+    "area": 505992
+  },
+  {
+    "name": {
+      "common": "Ethiopia",
+      "official": "Federal Democratic Republic of Ethiopia",
+      "native": {
+        "amh": {
+          "official": "\u12e8\u12a2\u1275\u12ee\u1335\u12eb \u134c\u12f4\u122b\u120b\u12ca \u12f2\u121e\u12ad\u122b\u1232\u12eb\u12ca \u122a\u1350\u1265\u120a\u12ad",
+          "common": "\u12a2\u1275\u12ee\u1335\u12eb"
+        }
+      }
+    },
+    "tld": [".et"],
+    "cca2": "ET",
+    "ccn3": "231",
+    "cca3": "ETH",
+    "currency": ["ETB"],
+    "callingCode": ["251"],
+    "capital": "Addis Ababa",
+    "altSpellings": ["ET", "\u02be\u012aty\u014d\u1e57\u1e57y\u0101", "Federal Democratic Republic of Ethiopia", "\u12e8\u12a2\u1275\u12ee\u1335\u12eb \u134c\u12f4\u122b\u120b\u12ca \u12f2\u121e\u12ad\u122b\u1232\u12eb\u12ca \u122a\u1350\u1265\u120a\u12ad"],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": ["Amharic"],
+    "translations": {
+      "cym": {"official": "Federal Democratic Republic of Ethiopia", "common": "Ethiopia"},
+      "deu": {"official": "Demokratischen Bundesrepublik \u00c4thiopien", "common": "\u00c4thiopien"},
+      "fra": {"official": "R\u00e9publique f\u00e9d\u00e9rale d\u00e9mocratique d'\u00c9thiopie", "common": "\u00c9thiopie"},
+      "hrv": {"official": "Savezna Demokratska Republika Etiopija", "common": "Etiopija"},
+      "ita": {"official": "Repubblica federale democratica di Etiopia", "common": "Etiopia"},
+      "jpn": {"official": "\u30a8\u30c1\u30aa\u30d4\u30a2\u9023\u90a6\u6c11\u4e3b\u5171\u548c\u56fd", "common": "\u30a8\u30c1\u30aa\u30d4\u30a2"},
+      "nld": {"official": "Federale Democratische Republiek Ethiopi\u00eb", "common": "Ethiopi\u00eb"},
+      "por": {"official": "Rep\u00fablica Federal Democr\u00e1tica da Eti\u00f3pia", "common": "Eti\u00f3pia"},
+      "rus": {"official": "\u0424\u0435\u0434\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u0430\u044f \u0414\u0435\u043c\u043e\u043a\u0440\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u042d\u0444\u0438\u043e\u043f\u0438\u044f", "common": "\u042d\u0444\u0438\u043e\u043f\u0438\u044f"},
+      "spa": {"official": "Rep\u00fablica Democr\u00e1tica Federal de Etiop\u00eda", "common": "Etiop\u00eda"}
+    },
+    "latlng": [8.980603, 38.757761],
+    "demonym": "Ethiopian",
+    "landlocked": true,
+    "borders": ["DJI", "ERI", "KEN", "SOM", "SSD", "SDN"],
+    "area": 1104300
+  },
+  {
+    "name": {
+      "common": "Finland",
+      "official": "Republic of Finland",
+      "native": {
+        "fin": {
+          "official": "Suomen tasavalta",
+          "common": "Suomi"
+        },
+        "swe": {
+          "official": "Republiken Finland",
+          "common": "Finland"
+        }
+      }
+    },
+    "tld": [".fi"],
+    "cca2": "FI",
+    "ccn3": "246",
+    "cca3": "FIN",
+    "currency": ["EUR"],
+    "callingCode": ["358"],
+    "capital": "Helsinki",
+    "altSpellings": ["FI", "Suomi", "Republic of Finland", "Suomen tasavalta", "Republiken Finland"],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": ["Finnish", "Swedish"],
+    "translations": {
+      "deu": {"official": "Republik Finnland", "common": "Finnland"},
+      "fra": {"official": "R\u00e9publique de Finlande", "common": "Finlande"},
+      "hrv": {"official": "Republika Finska", "common": "Finska"},
+      "ita": {"official": "Repubblica di Finlandia", "common": "Finlandia"},
+      "jpn": {"official": "\u30d5\u30a3\u30f3\u30e9\u30f3\u30c9\u5171\u548c\u56fd", "common": "\u30d5\u30a3\u30f3\u30e9\u30f3\u30c9"},
+      "nld": {"official": "Republiek Finland", "common": "Finland"},
+      "por": {"official": "Rep\u00fablica da Finl\u00e2ndia", "common": "Finl\u00e2ndia"},
+      "rus": {"official": "\u0424\u0438\u043d\u043b\u044f\u043d\u0434\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430", "common": "\u0424\u0438\u043d\u043b\u044f\u043d\u0434\u0438\u044f"},
+      "spa": {"official": "Rep\u00fablica de Finlandia", "common": "Finlandia"}
+    },
+    "latlng": [60.173324, 24.941025],
+    "demonym": "Finnish",
+    "landlocked": false,
+    "borders": ["NOR", "SWE", "RUS"],
+    "area": 338424
+  },
+  {
+    "name": {
+      "common": "France",
+      "official": "French Republic",
+      "native": {
+        "fra": {
+          "official": "R\u00e9publique fran\u00e7aise",
+          "common": "France"
+        }
+      }
+    },
+    "tld": [".fr"],
+    "cca2": "FR",
+    "ccn3": "250",
+    "cca3": "FRA",
+    "currency": ["EUR"],
+    "callingCode": ["33"],
+    "capital": "Paris",
+    "altSpellings": ["FR", "French Republic", "R\u00e9publique fran\u00e7aise"],
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "languages": ["French"],
+    "translations": {
+      "deu": {"official": "Franz\u00f6sisch Republik", "common": "Frankreich"},
+      "fra": {"official": "R\u00e9publique fran\u00e7aise", "common": "France"},
+      "hrv": {"official": "Francuska Republika", "common": "Francuska"},
+      "ita": {"official": "Repubblica francese", "common": "Francia"},
+      "jpn": {"official": "\u30d5\u30e9\u30f3\u30b9\u5171\u548c\u56fd", "common": "\u30d5\u30e9\u30f3\u30b9"},
+      "nld": {"official": "Franse Republiek", "common": "Frankrijk"},
+      "por": {"official": "Rep\u00fablica Francesa", "common": "Fran\u00e7a"},
+      "rus": {"official": "\u0424\u0440\u0430\u043d\u0446\u0443\u0437\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430", "common": "\u0424\u0440\u0430\u043d\u0446\u0438\u044f"},
+      "spa": {"official": "Rep\u00fablica franc\u00e9s", "common": "Francia"}
+    },
+    "latlng": [48.856614, 2.352222],
+    "demonym": "French",
+    "landlocked": false,
+    "borders": ["AND", "BEL", "DEU", "ITA", "LUX", "MCO", "ESP", "CHE"],
+    "area": 551695
+  },
+  {
+    "name": {
+      "common": "United Kingdom",
+      "official": "United Kingdom of Great Britain and Northern Ireland",
+      "native": {
+        "eng": {
+          "official": "United Kingdom of Great Britain and Northern Ireland",
+          "common": "United Kingdom"
+        }
+      }
+    },
+    "tld": [".uk"],
+    "cca2": "GB",
+    "ccn3": "826",
+    "cca3": "GBR",
+    "currency": ["GBP"],
+    "callingCode": ["44"],
+    "capital": "London",
+    "altSpellings": ["GB", "UK", "Great Britain"],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": ["English"],
+    "translations": {
+      "deu": {"official": "Vereinigtes K\u00f6nigreich Gro\u00dfbritannien und Nordirland", "common": "Vereinigtes K\u00f6nigreich"},
+      "fra": {"official": "Royaume-Uni de Grande-Bretagne et d'Irlande du Nord", "common": "Royaume-Uni"},
+      "hrv": {"official": "Ujedinjeno Kraljevstvo Velike Britanije i Sjeverne Irske", "common": "Ujedinjeno Kraljevstvo"},
+      "ita": {"official": "Regno Unito di Gran Bretagna e Irlanda del Nord", "common": "Regno Unito"},
+      "jpn": {"official": "\u30b0\u30ec\u30fc\u30c8\u00b7\u30d6\u30ea\u30c6\u30f3\u304a\u3088\u3073\u5317\u30a2\u30a4\u30eb\u30e9\u30f3\u30c9\u9023\u5408\u738b\u56fd", "common": "\u30a4\u30ae\u30ea\u30b9"},
+      "nld": {"official": "Verenigd Koninkrijk van Groot-Brittanni\u00eb en Noord-Ierland", "common": "Verenigd Koninkrijk"},
+      "por": {"official": "Reino Unido da Gr\u00e3-Bretanha e Irlanda do Norte", "common": "Reino Unido"},
+      "rus": {"official": "\u0421\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u043d\u043e\u0435 \u041a\u043e\u0440\u043e\u043b\u0435\u0432\u0441\u0442\u0432\u043e \u0412\u0435\u043b\u0438\u043a\u043e\u0431\u0440\u0438\u0442\u0430\u043d\u0438\u0438 \u0438 \u0421\u0435\u0432\u0435\u0440\u043d\u043e\u0439 \u0418\u0440\u043b\u0430\u043d\u0434\u0438\u0438", "common": "\u0412\u0435\u043b\u0438\u043a\u043e\u0431\u0440\u0438\u0442\u0430\u043d\u0438\u044f"},
+      "spa": {"official": "Reino Unido de Gran Breta\u00f1a e Irlanda del Norte", "common": "Reino Unido"}
+    },
+    "latlng": [51.507351, -0.127758],
+    "demonym": "British",
+    "landlocked": false,
+    "borders": ["IRL"],
+    "area": 242900
+  },
+  {
+    "name": {
+      "common": "Greece",
+      "official": "Hellenic Republic",
+      "native": {
+        "ell": {
+          "official": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ae \u0394\u03b7\u03bc\u03bf\u03ba\u03c1\u03b1\u03c4\u03af\u03b1",
+          "common": "\u0395\u03bb\u03bb\u03ac\u03b4\u03b1"
+        }
+      }
+    },
+    "tld": [".gr"],
+    "cca2": "GR",
+    "ccn3": "300",
+    "cca3": "GRC",
+    "currency": ["EUR"],
+    "callingCode": ["30"],
+    "capital": "Athens",
+    "altSpellings": ["GR", "Ell\u00e1da", "Hellenic Republic", "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ae \u0394\u03b7\u03bc\u03bf\u03ba\u03c1\u03b1\u03c4\u03af\u03b1"],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "languages": ["Greek"],
+    "translations": {
+      "deu": {"official": "Hellenische Republik", "common": "Griechenland"},
+      "fra": {"official": "R\u00e9publique hell\u00e9nique", "common": "Gr\u00e8ce"},
+      "hrv": {"official": "Helenska Republika", "common": "Gr\u010dka"},
+      "ita": {"official": "Repubblica ellenica", "common": "Grecia"},
+      "jpn": {"official": "\u30ae\u30ea\u30b7\u30e3\u5171\u548c\u56fd", "common": "\u30ae\u30ea\u30b7\u30e3"},
+      "nld": {"official": "Helleense Republiek", "common": "Griekenland"},
+      "por": {"official": "Rep\u00fablica Hel\u00e9nica", "common": "Gr\u00e9cia"},
+      "rus": {"official": "\u0413\u0440\u0435\u0447\u0435\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430", "common": "\u0413\u0440\u0435\u0446\u0438\u044f"},
+      "spa": {"official": "Rep\u00fablica Hel\u00e9nica", "common": "Grecia"}
+    },
+    "latlng": [37.983917, 23.72936],
+    "demonym": "Greek",
+    "landlocked": false,
+    "borders": ["ALB", "BGR", "TUR", "MKD"],
+    "area": 131990
+  },
+  {
+    "name": {
+      "common": "Indonesia",
+      "official": "Republic of Indonesia",
+      "native": {
+        "ind": {
+          "official": "Republik Indonesia",
+          "common": "Indonesia"
+        }
+      }
+    },
+    "tld": [".id"],
+    "cca2": "ID",
+    "ccn3": "360",
+    "cca3": "IDN",
+    "currency": ["IDR"],
+    "callingCode": ["62"],
+    "capital": "Jakarta",
+    "altSpellings": ["ID", "Republic of Indonesia", "Republik Indonesia"],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "languages": ["Indonesian"],
+    "translations": {
+      "deu": {"official": "Republik Indonesien", "common": "Indonesien"},
+      "fra": {"official": "R\u00e9publique d'Indon\u00e9sie", "common": "Indon\u00e9sie"},
+      "hrv": {"official": "Republika Indonezija", "common": "Indonezija"},
+      "ita": {"official": "Repubblica di Indonesia", "common": "Indonesia"},
+      "jpn": {"official": "\u30a4\u30f3\u30c9\u30cd\u30b7\u30a2\u5171\u548c\u56fd", "common": "\u30a4\u30f3\u30c9\u30cd\u30b7\u30a2"},
+      "nld": {"official": "Republiek Indonesi\u00eb", "common": "Indonesi\u00eb"},
+      "por": {"official": "Rep\u00fablica da Indon\u00e9sia", "common": "Indon\u00e9sia"},
+      "rus": {"official": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0418\u043d\u0434\u043e\u043d\u0435\u0437\u0438\u044f", "common": "\u0418\u043d\u0434\u043e\u043d\u0435\u0437\u0438\u044f"},
+      "spa": {"official": "Rep\u00fablica de Indonesia", "common": "Indonesia"}
+    },
+    "latlng": [-6.208763, 106.845599],
+    "demonym": "Indonesian",
+    "landlocked": false,
+    "borders": ["TLS", "MYS", "PNG"],
+    "area": 1904569
+  },
+  {
+    "name": {
+      "common": "India",
+      "official": "Republic of India",
+      "native": {
+        "eng": {
+          "official": "Republic of India",
+          "common": "India"
+        },
+        "hin": {
+          "official": "\u092d\u093e\u0930\u0924 \u0917\u0923\u0930\u093e\u091c\u094d\u092f",
+          "common": "\u092d\u093e\u0930\u0924"
+        }
+      }
+    },
+    "tld": [".in"],
+    "cca2": "IN",
+    "ccn3": "356",
+    "cca3": "IND",
+    "currency": ["INR"],
+    "callingCode": ["91"],
+    "capital": "New Delhi",
+    "altSpellings": ["IN", "Bh\u0101rat", "Republic of India", "Bharat Ganrajya"],
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "languages": ["English", "Hindi"],
+    "translations": {
+      "deu": {"official": "Republik Indien", "common": "Indien"},
+      "fra": {"official": "R\u00e9publique de l'Inde", "common": "Inde"},
+      "hrv": {"official": "Republika Indija", "common": "Indija"},
+      "ita": {"official": "Repubblica dell'India", "common": "India"},
+      "jpn": {"official": "\u30a4\u30f3\u30c9\u5171\u548c\u56fd", "common": "\u30a4\u30f3\u30c9"},
+      "nld": {"official": "Republiek India", "common": "India"},
+      "por": {"official": "Rep\u00fablica da \u00cdndia", "common": "\u00cdndia"},
+      "rus": {"official": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0418\u043d\u0434\u0438\u044f", "common": "\u0418\u043d\u0434\u0438\u044f"},
+      "spa": {"official": "Rep\u00fablica de la India", "common": "India"}
+    },
+    "latlng": [28.613939, 77.209021],
+    "demonym": "Indian",
+    "landlocked": false,
+    "borders": ["AFG", "BGD", "BTN", "MMR", "CHN", "NPL", "PAK", "LKA"],
+    "area": 3287590
+  },
+  {
+    "name": {
+      "common": "Ireland",
+      "official": "Republic of Ireland",
+      "native": {
+        "eng": {
+          "official": "Republic of Ireland",
+          "common": "Ireland"
+        },
+        "gle": {
+          "official": "Poblacht na h\u00c9ireann",
+          "common": "\u00c9ire"
+        }
+      }
+    },
+    "tld": [".ie"],
+    "cca2": "IE",
+    "ccn3": "372",
+    "cca3": "IRL",
+    "currency": ["EUR"],
+    "callingCode": ["353"],
+    "capital": "Dublin",
+    "altSpellings": ["IE", "\u00c9ire", "Republic of Ireland", "Poblacht na h\u00c9ireann"],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": ["English", "Irish"],
+    "translations": {
+      "deu": {"official": "Republik Irland", "common": "Irland"},
+      "fra": {"official": "R\u00e9publique d'Irlande", "common": "Irlande"},
+      "hrv": {"official": "Republika Irska", "common": "Irska"},
+      "ita": {"official": "Repubblica d'Irlanda", "common": "Irlanda"},
+      "jpn": {"official": "\u30a2\u30a4\u30eb\u30e9\u30f3\u30c9\u5171\u548c\u56fd", "common": "\u30a2\u30a4\u30eb\u30e9\u30f3\u30c9"},
+      "nld": {"official": "Republic of Ireland", "common": "Ierland"},
+      "por": {"official": "Rep\u00fablica da Irlanda", "common": "Irlanda"},
+      "rus": {"official": "\u0418\u0440\u043b\u0430\u043d\u0434\u0438\u044f", "common": "\u0418\u0440\u043b\u0430\u043d\u0434\u0438\u044f"},
+      "spa": {"official": "Rep\u00fablica de Irlanda", "common": "Irlanda"}
+    },
+    "latlng": [53.349805, -6.26031],
+    "demonym": "Irish",
+    "landlocked": false,
+    "borders": ["GBR"],
+    "area": 70273
+  },
+  {
+    "name": {
+      "common": "Iraq",
+      "official": "Republic of Iraq",
+      "native": {
+        "ara": {
+          "official": "\u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u0627\u0644\u0639\u0631\u0627\u0642",
+          "common": "\u0627\u0644\u0639\u0631\u0627\u0642"
+        },
+        "arc": {
+          "official": "\u0729\u0718\u073c\u071b\u0722\u0735\u0710 \u0710\u071d\u073c\u072a\u0732\u0729",
+          "common": "\u0729\u0718\u073c\u071b\u0722\u0735\u0710"
+        },
+        "ckb": {
+          "official": "\u06a9\u06c6\u0645\u0627\u0631\u06cc \u0639\u06ce\u0631\u0627\u0642",
+          "common": "\u06a9\u06c6\u0645\u0627\u0631\u06cc"
+        }
+      }
+    },
+    "tld": [".iq"],
+    "cca2": "IQ",
+    "ccn3": "368",
+    "cca3": "IRQ",
+    "currency": ["IQD"],
+    "callingCode": ["964"],
+    "capital": "Baghdad",
+    "altSpellings": ["IQ", "Republic of Iraq", "Jumh\u016briyyat al-\u2018Ir\u0101q"],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": ["Arabic", "Aramaic", "Sorani"],
+    "translations": {
+      "deu": {"official": "Republik Irak", "common": "Irak"},
+      "fra": {"official": "R\u00e9publique d'Irak", "common": "Irak"},
+      "hrv": {"official": "Republika Irak", "common": "Irak"},
+      "ita": {"official": "Repubblica dell'Iraq", "common": "Iraq"},
+      "jpn": {"official": "\u30a4\u30e9\u30af\u5171\u548c\u56fd", "common": "\u30a4\u30e9\u30af"},
+      "nld": {"official": "Republiek Irak", "common": "Irak"},
+      "por": {"official": "Rep\u00fablica do Iraque", "common": "Iraque"},
+      "rus": {"official": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0418\u0440\u0430\u043a", "common": "\u0418\u0440\u0430\u043a"},
+      "spa": {"official": "Rep\u00fablica de Irak", "common": "Irak"}
+    },
+    "latlng": [33.325000, 44.422],
+    "demonym": "Iraqi",
+    "landlocked": false,
+    "borders": ["IRN", "JOR", "KWT", "SAU", "SYR", "TUR"],
+    "area": 438317
+  },
+  {
+    "name": {
+      "common": "Iceland",
+      "official": "Iceland",
+      "native": {
+        "isl": {
+          "official": "\u00cdsland",
+          "common": "\u00cdsland"
+        }
+      }
+    },
+    "tld": [".is"],
+    "cca2": "IS",
+    "ccn3": "352",
+    "cca3": "ISL",
+    "currency": ["ISK"],
+    "callingCode": ["354"],
+    "capital": "Reykjavik",
+    "altSpellings": ["IS", "Island", "Republic of Iceland", "L\u00fd\u00f0veldi\u00f0 \u00cdsland"],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": ["Icelandic"],
+    "translations": {
+      "deu": {"official": "Island", "common": "Island"},
+      "fra": {"official": "Islande", "common": "Islande"},
+      "hrv": {"official": "Island", "common": "Island"},
+      "ita": {"official": "Islanda", "common": "Islanda"},
+      "jpn": {"official": "\u30a2\u30a4\u30b9\u30e9\u30f3\u30c9", "common": "\u30a2\u30a4\u30b9\u30e9\u30f3\u30c9"},
+      "nld": {"official": "IJsland", "common": "IJsland"},
+      "por": {"official": "Isl\u00e2ndia", "common": "Isl\u00e2ndia"},
+      "rus": {"official": "\u0418\u0441\u043b\u0430\u043d\u0434\u0438\u044f", "common": "\u0418\u0441\u043b\u0430\u043d\u0434\u0438\u044f"},
+      "spa": {"official": "Islandia", "common": "Islandia"}
+    },
+    "latlng": [64.133333, -21.933333],
+    "demonym": "Icelander",
+    "landlocked": false,
+    "borders": [],
+    "area": 103000
+  },
+  {
+    "name": {
+      "common": "Italy",
+      "official": "Italian Republic",
+      "native": {
+        "bar": {
+          "official": "Italienische Republik",
+          "common": "Italien"
+        },
+        "ita": {
+          "official": "Repubblica italiana",
+          "common": "Italia"
+        }
+      }
+    },
+    "tld": [".it"],
+    "cca2": "IT",
+    "ccn3": "380",
+    "cca3": "ITA",
+    "currency": ["EUR"],
+    "callingCode": ["39"],
+    "capital": "Rome",
+    "altSpellings": ["IT", "Italian Republic", "Repubblica italiana"],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "languages": ["Austro-Bavarian German", "Italian"],
+    "translations": {
+      "deu": {"official": "italienische Republik", "common": "Italien"},
+      "fra": {"official": "R\u00e9publique italienne", "common": "Italie"},
+      "hrv": {"official": "talijanska Republika", "common": "Italija"},
+      "ita": {"official": "Repubblica italiana", "common": "Italia"},
+      "jpn": {"official": "\u30a4\u30bf\u30ea\u30a2\u5171\u548c\u56fd", "common": "\u30a4\u30bf\u30ea\u30a2"},
+      "nld": {"official": "Italiaanse Republiek", "common": "Itali\u00eb"},
+      "por": {"official": "Rep\u00fablica Italiana", "common": "It\u00e1lia"},
+      "rus": {"official": "\u0438\u0442\u0430\u043b\u044c\u044f\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430", "common": "\u0418\u0442\u0430\u043b\u0438\u044f"},
+      "spa": {"official": "Rep\u00fablica Italiana", "common": "Italia"}
+    },
+    "latlng": [41.902783, 12.496366],
+    "demonym": "Italian",
+    "landlocked": false,
+    "borders": ["AUT", "FRA", "SMR", "SVN", "CHE", "VAT"],
+    "area": 301336
+  },
+  {
+    "name": {
+      "common": "Japan",
+      "official": "Japan",
+      "native": {
+        "jpn": {
+          "official": "\u65e5\u672c",
+          "common": "\u65e5\u672c"
+        }
+      }
+    },
+    "tld": [".jp", ".\u307f\u3093\u306a"],
+    "cca2": "JP",
+    "ccn3": "392",
+    "cca3": "JPN",
+    "currency": ["JPY"],
+    "callingCode": ["81"],
+    "capital": "Tokyo",
+    "altSpellings": ["JP", "Nippon", "Nihon"],
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "languages": ["Japanese"],
+    "translations": {
+      "deu": {"official": "Japan", "common": "Japan"},
+      "fra": {"official": "Japon", "common": "Japon"},
+      "hrv": {"official": "Japan", "common": "Japan"},
+      "ita": {"official": "Giappone", "common": "Giappone"},
+      "jpn": {"official": "\u65e5\u672c", "common": "\u65e5\u672c"},
+      "nld": {"official": "Japan", "common": "Japan"},
+      "por": {"official": "Jap\u00e3o", "common": "Jap\u00e3o"},
+      "rus": {"official": "\u042f\u043f\u043e\u043d\u0438\u044f", "common": "\u042f\u043f\u043e\u043d\u0438\u044f"},
+      "spa": {"official": "Jap\u00f3n", "common": "Jap\u00f3n"}
+    },
+    "latlng": [35.689487, 139.691706],
+    "demonym": "Japanese",
+    "landlocked": false,
+    "borders": [],
+    "area": 377930
+  },
+  {
+    "name": {
+      "common": "Kenya",
+      "official": "Republic of Kenya",
+      "native": {
+        "eng": {
+          "official": "Republic of Kenya",
+          "common": "Kenya"
+        },
+        "swa": {
+          "official": "Republic of Kenya",
+          "common": "Kenya"
+        }
+      }
+    },
+    "tld": [".ke"],
+    "cca2": "KE",
+    "ccn3": "404",
+    "cca3": "KEN",
+    "currency": ["KES"],
+    "callingCode": ["254"],
+    "capital": "Nairobi",
+    "altSpellings": ["KE", "Republic of Kenya", "Jamhuri ya Kenya"],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": ["English", "Swahili"],
+    "translations": {
+      "deu": {"official": "Republik Kenia", "common": "Kenia"},
+      "fra": {"official": "R\u00e9publique du Kenya", "common": "Kenya"},
+      "hrv": {"official": "Republika Kenija", "common": "Kenija"},
+      "ita": {"official": "Repubblica del Kenya", "common": "Kenya"},
+      "jpn": {"official": "\u30b1\u30cb\u30a2\u5171\u548c\u56fd", "common": "\u30b1\u30cb\u30a2"},
+      "nld": {"official": "Republiek Kenia", "common": "Kenia"},
+      "por": {"official": "Rep\u00fablica do Qu\u00e9nia", "common": "Qu\u00e9nia"},
+      "rus": {"official": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u041a\u0435\u043d\u0438\u044f", "common": "\u041a\u0435\u043d\u0438\u044f"},
+      "spa": {"official": "Rep\u00fablica de Kenya", "common": "Kenia"}
+    },
+    "latlng": [-1.292066, 36.821946],
+    "demonym": "Kenyan",
+    "landlocked": false,
+    "borders": ["ETH", "SOM", "SSD", "TZA", "UGA"],
+    "area": 580367
+  },
+  {
+    "name": {
+      "common": "South Korea",
+      "official": "Republic of Korea",
+      "native": {
+        "kor": {
+          "official": "\ud55c\uad6d",
+          "common": "\ub300\ud55c\ubbfc\uad6d"
+        }
+      }
+    },
+    "tld": [".kr", ".\ud55c\uad6d"],
+    "cca2": "KR",
+    "ccn3": "410",
+    "cca3": "KOR",
+    "currency": ["KRW"],
+    "callingCode": ["82"],
+    "capital": "Seoul",
+    "altSpellings": ["KR", "Republic of Korea"],
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "languages": ["Korean"],
+    "translations": {
+      "deu": {"official": "Republik Korea", "common": "S\u00fcdkorea"},
+      "fra": {"official": "R\u00e9publique de Cor\u00e9e", "common": "Cor\u00e9e du Sud"},
+      "hrv": {"official": "Republika Koreja", "common": "Ju\u017ena Koreja"},
+      "ita": {"official": "Repubblica di Corea", "common": "Corea del Sud"},
+      "jpn": {"official": "\u5927\u97d3\u6c11\u56fd", "common": "\u5927\u97d3\u6c11\u56fd"},
+      "nld": {"official": "Republiek Korea", "common": "Zuid-Korea"},
+      "por": {"official": "Rep\u00fablica da Coreia", "common": "Coreia do Sul"},
+      "rus": {"official": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u041a\u043e\u0440\u0435\u044f", "common": "\u042e\u0436\u043d\u0430\u044f \u041a\u043e\u0440\u0435\u044f"},
+      "spa": {"official": "Rep\u00fablica de Corea", "common": "Corea del Sur"}
+    },
+    "latlng": [37.566535, 126.977969],
+    "demonym": "South Korean",
+    "landlocked": false,
+    "borders": ["PRK"],
+    "area": 100210
+  },
+  {
+    "name": {
+      "common": "Morocco",
+      "official": "Kingdom of Morocco",
+      "native": {
+        "ara": {
+          "official": "\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0645\u063a\u0631\u0628\u064a\u0629",
+          "common": "\u0627\u0644\u0645\u063a\u0631\u0628"
+        },
+        "ber": {
+          "official": "\u2d5c\u2d30\u2d33\u2d4d\u2d37\u2d49\u2d5c \u2d4f \u2d4d\u2d4e\u2d56\u2d54\u2d49\u2d31",
+          "common": "\u2d4d\u2d4e\u2d30\u2d56\u2d54\u2d49\u2d31"
+        }
+      }
+    },
+    "tld": [".ma", "\u0627\u0644\u0645\u063a\u0631\u0628."],
+    "cca2": "MA",
+    "ccn3": "504",
+    "cca3": "MAR",
+    "currency": ["MAD"],
+    "callingCode": ["212"],
+    "capital": "Rabat",
+    "altSpellings": ["MA", "Kingdom of Morocco", "Al-Mamlakah al-Ma\u0121ribiyah"],
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "languages": ["Arabic", "Berber"],
+    "translations": {
+      "deu": {"official": "K\u00f6nigreich Marokko", "common": "Marokko"},
+      "fra": {"official": "Royaume du Maroc", "common": "Maroc"},
+      "hrv": {"official": "Kraljevina Maroko", "common": "Maroko"},
+      "ita": {"official": "Regno del Marocco", "common": "Marocco"},
+      "jpn": {"official": "\u30e2\u30ed\u30c3\u30b3\u738b\u56fd", "common": "\u30e2\u30ed\u30c3\u30b3"},
+      "nld": {"official": "Koninkrijk Marokko", "common": "Marokko"},
+      "por": {"official": "Reino de Marrocos", "common": "Marrocos"},
+      "rus": {"official": "\u041a\u043e\u0440\u043e\u043b\u0435\u0432\u0441\u0442\u0432\u043e \u041c\u0430\u0440\u043e\u043a\u043a\u043e", "common": "\u041c\u0430\u0440\u043e\u043a\u043a\u043e"},
+      "spa": {"official": "Reino de Marruecos", "common": "Marruecos"}
+    },
+    "latlng": [33.971590, -6.849813],
+    "demonym": "Moroccan",
+    "landlocked": false,
+    "borders": ["DZA", "ESH", "ESP"],
+    "area": 446550
+  },
+  {
+    "name": {
+      "common": "Madagascar",
+      "official": "Republic of Madagascar",
+      "native": {
+        "fra": {
+          "official": "R\u00e9publique de Madagascar",
+          "common": "Madagascar"
+        },
+        "mlg": {
+          "official": "Repoblikan'i Madagasikara",
+          "common": "Madagasikara"
+        }
+      }
+    },
+    "tld": [".mg"],
+    "cca2": "MG",
+    "ccn3": "450",
+    "cca3": "MDG",
+    "currency": ["MGA"],
+    "callingCode": ["261"],
+    "capital": "Antananarivo",
+    "altSpellings": ["MG", "Republic of Madagascar", "Repoblikan'i Madagasikara", "R\u00e9publique de Madagascar"],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": ["French", "Malagasy"],
+    "translations": {
+      "deu": {"official": "Republik Madagaskar", "common": "Madagaskar"},
+      "fra": {"official": "R\u00e9publique de Madagascar", "common": "Madagascar"},
+      "hrv": {"official": "Republika Madagaskar", "common": "Madagaskar"},
+      "ita": {"official": "Repubblica del Madagascar", "common": "Madagascar"},
+      "jpn": {"official": "\u30de\u30c0\u30ac\u30b9\u30ab\u30eb\u5171\u548c\u56fd", "common": "\u30de\u30c0\u30ac\u30b9\u30ab\u30eb"},
+      "nld": {"official": "Republiek Madagaskar", "common": "Madagaskar"},
+      "por": {"official": "Rep\u00fablica de Madag\u00e1scar", "common": "Madag\u00e1scar"},
+      "rus": {"official": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u041c\u0430\u0434\u0430\u0433\u0430\u0441\u043a\u0430\u0440", "common": "\u041c\u0430\u0434\u0430\u0433\u0430\u0441\u043a\u0430\u0440"},
+      "spa": {"official": "Rep\u00fablica de Madagascar", "common": "Madagascar"}
+    },
+    "latlng": [-18.933333, 47.516667],
+    "demonym": "Malagasy",
+    "landlocked": false,
+    "borders": [],
+    "area": 587041
+  },
+  {
+    "name": {
+      "common": "Mexico",
+      "official": "United Mexican States",
+      "native": {
+        "spa": {
+          "official": "Estados Unidos Mexicanos",
+          "common": "M\u00e9xico"
+        }
+      }
+    },
+    "tld": [".mx"],
+    "cca2": "MX",
+    "ccn3": "484",
+    "cca3": "MEX",
+    "currency": ["MXN"],
+    "callingCode": ["52"],
+    "capital": "Mexico City",
+    "altSpellings": ["MX", "Mexicanos", "United Mexican States", "Estados Unidos Mexicanos"],
+    "region": "The Americas",
+    "subregion": "Central America",
+    "languages": ["Spanish"],
+    "translations": {
+      "deu": {"official": "Vereinigten Mexikanischen Staaten", "common": "Mexiko"},
+      "fra": {"official": "\u00c9tats-Unis mexicains", "common": "Mexique"},
+      "hrv": {"official": "Sjedinjene Meksi\u010dke Dr\u017eave", "common": "Meksiko"},
+      "ita": {"official": "Stati Uniti del Messico", "common": "Messico"},
+      "jpn": {"official": "\u30e1\u30ad\u30b7\u30b3\u5408\u8846\u56fd", "common": "\u30e1\u30ad\u30b7\u30b3"},
+      "nld": {"official": "Verenigde Mexicaanse Staten", "common": "Mexico"},
+      "por": {"official": "Estados Unidos Mexicanos", "common": "M\u00e9xico"},
+      "rus": {"official": "\u041c\u0435\u043a\u0441\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0445 \u0421\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u043d\u044b\u0445 \u0428\u0442\u0430\u0442\u043e\u0432", "common": "\u041c\u0435\u043a\u0441\u0438\u043a\u0430"},
+      "spa": {"official": "Estados Unidos Mexicanos", "common": "M\u00e9xico"}
+    },
+    "latlng": [19.432608, -99.133208],
+    "demonym": "Mexican",
+    "landlocked": false,
+    "borders": ["BLZ", "GTM", "USA"],
+    "area": 1964375
+  },
+  {
+    "name": {
+      "common": "Mongolia",
+      "official": "Mongolia",
+      "native": {
+        "mon": {
+          "official": "\u041c\u043e\u043d\u0433\u043e\u043b \u0443\u043b\u0441",
+          "common": "\u041c\u043e\u043d\u0433\u043e\u043b \u0443\u043b\u0441"
+        }
+      }
+    },
+    "tld": [".mn"],
+    "cca2": "MN",
+    "ccn3": "496",
+    "cca3": "MNG",
+    "currency": ["MNT"],
+    "callingCode": ["976"],
+    "capital": "Ulan Bator",
+    "altSpellings": ["MN"],
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "languages": ["Mongolian"],
+    "translations": {
+      "deu": {"official": "Mongolei", "common": "Mongolei"},
+      "fra": {"official": "Mongolie", "common": "Mongolie"},
+      "hrv": {"official": "Mongolija", "common": "Mongolija"},
+      "ita": {"official": "Mongolia", "common": "Mongolia"},
+      "jpn": {"official": "\u30e2\u30f3\u30b4\u30eb", "common": "\u30e2\u30f3\u30b4\u30eb"},
+      "nld": {"official": "Mongoli\u00eb", "common": "Mongoli\u00eb"},
+      "por": {"official": "Mong\u00f3lia", "common": "Mong\u00f3lia"},
+      "rus": {"official": "\u041c\u043e\u043d\u0433\u043e\u043b\u0438\u044f", "common": "\u041c\u043e\u043d\u0433\u043e\u043b\u0438\u044f"},
+      "spa": {"official": "Mongolia", "common": "Mongolia"}
+    },
+    "latlng": [47.920000, 106.92],
+    "demonym": "Mongolian",
+    "landlocked": true,
+    "borders": ["CHN", "RUS"],
+    "area": 1564110
+  },
+  {
+    "name": {
+      "common": "Malaysia",
+      "official": "Malaysia",
+      "native": {
+        "eng": {
+          "official": "Malaysia",
+          "common": "Malaysia"
+        },
+        "msa": {
+          "official": "\u0645\u0644\u064a\u0633\u064a\u0627",
+          "common": "\u0645\u0644\u064a\u0633\u064a\u0627"
+        }
+      }
+    },
+    "tld": [".my"],
+    "cca2": "MY",
+    "ccn3": "458",
+    "cca3": "MYS",
+    "currency": ["MYR"],
+    "callingCode": ["60"],
+    "capital": "Kuala Lumpur",
+    "altSpellings": ["MY"],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "languages": ["English", "Malay"],
+    "translations": {
+      "deu": {"official": "Malaysia", "common": "Malaysia"},
+      "fra": {"official": "Malaisie", "common": "Malaisie"},
+      "hrv": {"official": "Malezija", "common": "Malezija"},
+      "ita": {"official": "Malaysia", "common": "Malesia"},
+      "jpn": {"official": "\u30de\u30ec\u30fc\u30b7\u30a2", "common": "\u30de\u30ec\u30fc\u30b7\u30a2"},
+      "nld": {"official": "Maleisi\u00eb", "common": "Maleisi\u00eb"},
+      "por": {"official": "Mal\u00e1sia", "common": "Mal\u00e1sia"},
+      "rus": {"official": "\u041c\u0430\u043b\u0430\u0439\u0437\u0438\u044f", "common": "\u041c\u0430\u043b\u0430\u0439\u0437\u0438\u044f"},
+      "spa": {"official": "Malasia", "common": "Malasia"}
+    },
+    "latlng": [3.139003, 101.686855],
+    "demonym": "Malaysian",
+    "landlocked": false,
+    "borders": ["BRN", "IDN", "THA"],
+    "area": 330803
+  },
+  {
+    "name": {
+      "common": "Nigeria",
+      "official": "Federal Republic of Nigeria",
+      "native": {
+        "eng": {
+          "official": "Federal Republic of Nigeria",
+          "common": "Nigeria"
+        }
+      }
+    },
+    "tld": [".ng"],
+    "cca2": "NG",
+    "ccn3": "566",
+    "cca3": "NGA",
+    "currency": ["NGN"],
+    "callingCode": ["234"],
+    "capital": "Abuja",
+    "altSpellings": ["NG", "Nijeriya", "Na\u00edj\u00edr\u00ed\u00e0", "Federal Republic of Nigeria"],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": ["English"],
+    "translations": {
+      "deu": {"official": "Bundesrepublik Nigeria", "common": "Nigeria"},
+      "fra": {"official": "R\u00e9publique f\u00e9d\u00e9rale du Nigeria", "common": "Nig\u00e9ria"},
+      "hrv": {"official": "Savezna Republika Nigerija", "common": "Nigerija"},
+      "ita": {"official": "Repubblica federale di Nigeria", "common": "Nigeria"},
+      "jpn": {"official": "\u30ca\u30a4\u30b8\u30a7\u30ea\u30a2\u9023\u90a6\u5171\u548c\u56fd", "common": "\u30ca\u30a4\u30b8\u30a7\u30ea\u30a2"},
+      "nld": {"official": "Federale Republiek Nigeria", "common": "Nigeria"},
+      "por": {"official": "Rep\u00fablica Federal da Nig\u00e9ria", "common": "Nig\u00e9ria"},
+      "rus": {"official": "\u0424\u0435\u0434\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u041d\u0438\u0433\u0435\u0440\u0438\u044f", "common": "\u041d\u0438\u0433\u0435\u0440\u0438\u044f"},
+      "spa": {"official": "Rep\u00fablica Federal de Nigeria", "common": "Nigeria"}
+    },
+    "latlng": [9.066667, 7.483333],
+    "demonym": "Nigerian",
+    "landlocked": false,
+    "borders": ["BEN", "CMR", "TCD", "NER"],
+    "area": 923768
+  },
+  {
+    "name": {
+      "common": "Norway",
+      "official": "Kingdom of Norway",
+      "native": {
+        "nno": {
+          "official": "Kongeriket Noreg",
+          "common": "Noreg"
+        },
+        "nob": {
+          "official": "Kongeriket Norge",
+          "common": "Norge"
+        },
+        "smi": {
+          "official": "Norgga gonagasriika",
+          "common": "Norgga"
+        }
+      }
+    },
+    "tld": [".no"],
+    "cca2": "NO",
+    "ccn3": "578",
+    "cca3": "NOR",
+    "currency": ["NOK"],
+    "callingCode": ["47"],
+    "capital": "Oslo",
+    "altSpellings": ["NO", "Norge", "Noreg", "Kingdom of Norway", "Kongeriket Norge", "Kongeriket Noreg"],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": ["Norwegian Nynorsk", "Norwegian Bokm\u00e5l", "Sami"],
+    "translations": {
+      "deu": {"official": "K\u00f6nigreich Norwegen", "common": "Norwegen"},
+      "fra": {"official": "Royaume de Norv\u00e8ge", "common": "Norv\u00e8ge"},
+      "hrv": {"official": "Kraljevina Norve\u0161ka", "common": "Norve\u0161ka"},
+      "ita": {"official": "Regno di Norvegia", "common": "Norvegia"},
+      "jpn": {"official": "\u30ce\u30eb\u30a6\u30a7\u30fc\u738b\u56fd", "common": "\u30ce\u30eb\u30a6\u30a7\u30fc"},
+      "nld": {"official": "Koninkrijk Noorwegen", "common": "Noorwegen"},
+      "por": {"official": "Reino da Noruega", "common": "Noruega"},
+      "rus": {"official": "\u041a\u043e\u0440\u043e\u043b\u0435\u0432\u0441\u0442\u0432\u043e \u041d\u043e\u0440\u0432\u0435\u0433\u0438\u044f", "common": "\u041d\u043e\u0440\u0432\u0435\u0433\u0438\u044f"},
+      "spa": {"official": "Reino de Noruega", "common": "Noruega"}
+    },
+    "latlng": [59.913869, 10.752245],
+    "demonym": "Norwegian",
+    "landlocked": false,
+    "borders": ["FIN", "SWE", "RUS"],
+    "area": 323802
+  },
+  {
+    "name": {
+      "common": "Nepal",
+      "official": "Federal Democratic Republic of Nepal",
+      "native": {
+        "nep": {
+          "official": "\u0928\u0947\u092a\u093e\u0932 \u0938\u0902\u0918\u0940\u092f \u0932\u094b\u0915\u0924\u093e\u0928\u094d\u0924\u094d\u0930\u093f\u0915 \u0917\u0923\u0924\u0928\u094d\u0924\u094d\u0930",
+          "common": "\u0928\u092a\u0932"
+        }
+      }
+    },
+    "tld": [".np"],
+    "cca2": "NP",
+    "ccn3": "524",
+    "cca3": "NPL",
+    "currency": ["NPR"],
+    "callingCode": ["977"],
+    "capital": "Kathmandu",
+    "altSpellings": ["NP", "Federal Democratic Republic of Nepal", "Lokt\u0101ntrik Ganatantra Nep\u0101l"],
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "languages": ["Nepali"],
+    "translations": {
+      "deu": {"official": "Demokratischen Bundesrepublik Nepal", "common": "N\u00e9pal"},
+      "fra": {"official": "R\u00e9publique d\u00e9mocratique f\u00e9d\u00e9rale du N\u00e9pal", "common": "N\u00e9pal"},
+      "hrv": {"official": "Savezna Demokratska Republika Nepal", "common": "Nepal"},
+      "ita": {"official": "Repubblica federale democratica del Nepal", "common": "Nepal"},
+      "jpn": {"official": "\u30cd\u30d1\u30fc\u30eb\u9023\u90a6\u6c11\u4e3b\u5171\u548c\u56fd", "common": "\u30cd\u30d1\u30fc\u30eb"},
+      "nld": {"official": "Federale Democratische Republiek Nepal", "common": "Nepal"},
+      "por": {"official": "Rep\u00fablica Democr\u00e1tica Federal do Nepal", "common": "Nepal"},
+      "rus": {"official": "\u0424\u0435\u0434\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u0430\u044f \u0414\u0435\u043c\u043e\u043a\u0440\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u041d\u0435\u043f\u0430\u043b", "common": "\u041d\u0435\u043f\u0430\u043b"},
+      "spa": {"official": "Rep\u00fablica Democr\u00e1tica Federal de Nepal", "common": "Nepal"}
+    },
+    "latlng": [27.700000, 85.333333],
+    "demonym": "Nepalese",
+    "landlocked": true,
+    "borders": ["CHN", "IND"],
+    "area": 147181
+  },
+  {
+    "name": {
+      "common": "New Zealand",
+      "official": "New Zealand",
+      "native": {
+        "eng": {
+          "official": "New Zealand",
+          "common": "New Zealand"
+        },
+        "mri": {
+          "official": "Aotearoa",
+          "common": "Aotearoa"
+        },
+        "nzs": {
+          "official": "New Zealand",
+          "common": "New Zealand"
+        }
+      }
+    },
+    "tld": [".nz"],
+    "cca2": "NZ",
+    "ccn3": "554",
+    "cca3": "NZL",
+    "currency": ["NZD"],
+    "callingCode": ["64"],
+    "capital": "Wellington",
+    "altSpellings": ["NZ", "Aotearoa"],
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "languages": ["English", "M\u0101ori", "New Zealand Sign Language"],
+    "translations": {
+      "deu": {"official": "Neuseeland", "common": "Neuseeland"},
+      "fra": {"official": "Nouvelle-Z\u00e9lande", "common": "Nouvelle-Z\u00e9lande"},
+      "hrv": {"official": "Novi Zeland", "common": "Novi Zeland"},
+      "ita": {"official": "Nuova Zelanda", "common": "Nuova Zelanda"},
+      "jpn": {"official": "\u30cb\u30e5\u30fc\u30b8\u30fc\u30e9\u30f3\u30c9", "common": "\u30cb\u30e5\u30fc\u30b8\u30fc\u30e9\u30f3\u30c9"},
+      "nld": {"official": "Nieuw Zeeland", "common": "Nieuw-Zeeland"},
+      "por": {"official": "nova Zel\u00e2ndia", "common": "Nova Zel\u00e2ndia"},
+      "rus": {"official": "\u041d\u043e\u0432\u0430\u044f \u0417\u0435\u043b\u0430\u043d\u0434\u0438\u044f", "common": "\u041d\u043e\u0432\u0430\u044f \u0417\u0435\u043b\u0430\u043d\u0434\u0438\u044f"},
+      "spa": {"official": "nueva Zelanda", "common": "Nueva Zelanda"}
+    },
+    "latlng": [-41.286460, 174.776236],
+    "demonym": "New Zealander",
+    "landlocked": false,
+    "borders": [],
+    "area": 270467
+  },
+  {
+    "name": {
+      "common": "Panama",
+      "official": "Republic of Panama",
+      "native": {
+        "spa": {
+          "official": "Rep\u00fablica de Panam\u00e1",
+          "common": "Panam\u00e1"
+        }
+      }
+    },
+    "tld": [".pa"],
+    "cca2": "PA",
+    "ccn3": "591",
+    "cca3": "PAN",
+    "currency": ["PAB", "USD"],
+    "callingCode": ["507"],
+    "capital": "Panama City",
+    "altSpellings": ["PA", "Republic of Panama", "Rep\u00fablica de Panam\u00e1"],
+    "region": "The Americas",
+    "subregion": "Central America",
+    "languages": ["Spanish"],
+    "translations": {
+      "deu": {"official": "Republik Panama", "common": "Panama"},
+      "fra": {"official": "R\u00e9publique du Panama", "common": "Panama"},
+      "hrv": {"official": "Republika Panama", "common": "Panama"},
+      "ita": {"official": "Repubblica di Panama", "common": "Panama"},
+      "jpn": {"official": "\u30d1\u30ca\u30de\u5171\u548c\u56fd", "common": "\u30d1\u30ca\u30de"},
+      "nld": {"official": "Republiek Panama", "common": "Panama"},
+      "por": {"official": "Rep\u00fablica do Panam\u00e1", "common": "Panam\u00e1"},
+      "rus": {"official": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u041f\u0430\u043d\u0430\u043c\u0430", "common": "\u041f\u0430\u043d\u0430\u043c\u0430"},
+      "spa": {"official": "Rep\u00fablica de Panam\u00e1", "common": "Panam\u00e1"}
+    },
+    "latlng": [8.983333, -79.516667],
+    "demonym": "Panamanian",
+    "landlocked": false,
+    "borders": ["COL", "CRI"],
+    "area": 75417
+  },
+  {
+    "name": {
+      "common": "Peru",
+      "official": "Republic of Peru",
+      "native": {
+        "aym": {
+          "official": "Piruw Suyu",
+          "common": "Piruw"
+        },
+        "que": {
+          "official": "Piruw Ripuwlika",
+          "common": "Piruw"
+        },
+        "spa": {
+          "official": "Rep\u00fablica del Per\u00fa",
+          "common": "Per\u00fa"
+        }
+      }
+    },
+    "tld": [".pe"],
+    "cca2": "PE",
+    "ccn3": "604",
+    "cca3": "PER",
+    "currency": ["PEN"],
+    "callingCode": ["51"],
+    "capital": "Lima",
+    "altSpellings": ["PE", "Republic of Peru", "Rep\u00fablica del Per\u00fa"],
+    "region": "The Americas",
+    "subregion": "South America",
+    "languages": ["Aymara", "Quechua", "Spanish"],
+    "translations": {
+      "deu": {"official": "Republik Peru", "common": "Peru"},
+      "fra": {"official": "R\u00e9publique du P\u00e9rou", "common": "P\u00e9rou"},
+      "hrv": {"official": "Republika Peru", "common": "Peru"},
+      "ita": {"official": "Repubblica del Per\u00f9", "common": "Per\u00f9"},
+      "jpn": {"official": "\u30da\u30eb\u30fc\u5171\u548c\u56fd", "common": "\u30da\u30eb\u30fc"},
+      "nld": {"official": "Republiek Peru", "common": "Peru"},
+      "por": {"official": "Rep\u00fablica do Peru", "common": "Per\u00fa"},
+      "rus": {"official": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u041f\u0435\u0440\u0443", "common": "\u041f\u0435\u0440\u0443"},
+      "spa": {"official": "Rep\u00fablica de Per\u00fa", "common": "Per\u00fa"}
+    },
+    "latlng": [-12.046374, -77.042793],
+    "demonym": "Peruvian",
+    "landlocked": false,
+    "borders": ["BOL", "BRA", "CHL", "COL", "ECU"],
+    "area": 1285216
+  },
+  {
+    "name": {
+      "common": "Philippines",
+      "official": "Republic of the Philippines",
+      "native": {
+        "eng": {
+          "official": "Republic of the Philippines",
+          "common": "Philippines"
+        },
+        "fil": {
+          "official": "Republic of the Philippines",
+          "common": "Pilipinas"
+        }
+      }
+    },
+    "tld": [".ph"],
+    "cca2": "PH",
+    "ccn3": "608",
+    "cca3": "PHL",
+    "currency": ["PHP"],
+    "callingCode": ["63"],
+    "capital": "Manila",
+    "altSpellings": ["PH", "Republic of the Philippines", "Rep\u00fablika ng Pilipinas"],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "languages": ["English", "Filipino"],
+    "translations": {
+      "deu": {"official": "Republik der Philippinen", "common": "Philippinen"},
+      "fra": {"official": "R\u00e9publique des Philippines", "common": "Philippines"},
+      "hrv": {"official": "Republika Filipini", "common": "Filipini"},
+      "ita": {"official": "Repubblica delle Filippine", "common": "Filippine"},
+      "jpn": {"official": "\u30d5\u30a3\u30ea\u30d4\u30f3\u5171\u548c\u56fd", "common": "\u30d5\u30a3\u30ea\u30d4\u30f3"},
+      "nld": {"official": "Republiek der Filipijnen", "common": "Filipijnen"},
+      "por": {"official": "Rep\u00fablica das Filipinas", "common": "Filipinas"},
+      "rus": {"official": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0424\u0438\u043b\u0438\u043f\u043f\u0438\u043d\u044b", "common": "\u0424\u0438\u043b\u0438\u043f\u043f\u0438\u043d\u044b"},
+      "spa": {"official": "Rep\u00fablica de las Filipinas", "common": "Filipinas"}
+    },
+    "latlng": [14.599512, 120.984219],
+    "demonym": "Filipino",
+    "landlocked": false,
+    "borders": [],
+    "area": 342353
+  },
+  {
+    "name": {
+      "common": "Poland",
+      "official": "Republic of Poland",
+      "native": {
+        "pol": {
+          "official": "Rzeczpospolita Polska",
+          "common": "Polska"
+        }
+      }
+    },
+    "tld": [".pl"],
+    "cca2": "PL",
+    "ccn3": "616",
+    "cca3": "POL",
+    "currency": ["PLN"],
+    "callingCode": ["48"],
+    "capital": "Warsaw",
+    "altSpellings": ["PL", "Republic of Poland", "Rzeczpospolita Polska"],
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "languages": ["Polish"],
+    "translations": {
+      "deu": {"official": "Republik Polen", "common": "Polen"},
+      "fra": {"official": "R\u00e9publique de Pologne", "common": "Pologne"},
+      "hrv": {"official": "Republika Poljska", "common": "Poljska"},
+      "ita": {"official": "Repubblica di Polonia", "common": "Polonia"},
+      "jpn": {"official": "\u30dd\u30fc\u30e9\u30f3\u30c9\u5171\u548c\u56fd", "common": "\u30dd\u30fc\u30e9\u30f3\u30c9"},
+      "nld": {"official": "Republiek Polen", "common": "Polen"},
+      "por": {"official": "Rep\u00fablica da Pol\u00f3nia", "common": "Pol\u00f3nia"},
+      "rus": {"official": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u041f\u043e\u043b\u044c\u0448\u0430", "common": "\u041f\u043e\u043b\u044c\u0448\u0430"},
+      "spa": {"official": "Rep\u00fablica de Polonia", "common": "Polonia"}
+    },
+    "latlng": [52.229676, 21.012229],
+    "demonym": "Polish",
+    "landlocked": false,
+    "borders": ["BLR", "CZE", "DEU", "LTU", "RUS", "SVK", "UKR"],
+    "area": 312679
+  },
+  {
+    "name": {
+      "common": "Romania",
+      "official": "Romania",
+      "native": {
+        "ron": {
+          "official": "Rom\u00e2nia",
+          "common": "Rom\u00e2nia"
+        }
+      }
+    },
+    "tld": [".ro"],
+    "cca2": "RO",
+    "ccn3": "642",
+    "cca3": "ROU",
+    "currency": ["RON"],
+    "callingCode": ["40"],
+    "capital": "Bucharest",
+    "altSpellings": ["RO", "Rumania", "Roumania", "Rom\u00e2nia"],
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "languages": ["Romanian"],
+    "translations": {
+      "deu": {"official": "Rum\u00e4nien", "common": "Rum\u00e4nien"},
+      "fra": {"official": "Roumanie", "common": "Roumanie"},
+      "hrv": {"official": "Rumunija", "common": "Rumunjska"},
+      "ita": {"official": "Romania", "common": "Romania"},
+      "jpn": {"official": "\u30eb\u30fc\u30de\u30cb\u30a2", "common": "\u30eb\u30fc\u30de\u30cb\u30a2"},
+      "nld": {"official": "Roemeni\u00eb", "common": "Roemeni\u00eb"},
+      "por": {"official": "Rom\u00eania", "common": "Rom\u00e9nia"},
+      "rus": {"official": "\u0420\u0443\u043c\u044b\u043d\u0438\u044f", "common": "\u0420\u0443\u043c\u044b\u043d\u0438\u044f"},
+      "spa": {"official": "Rumania", "common": "Rumania"}
+    },
+    "latlng": [44.426767, 26.102538],
+    "demonym": "Romanian",
+    "landlocked": false,
+    "borders": ["BGR", "HUN", "MDA", "SRB", "UKR"],
+    "area": 238391
+  },
+  {
+    "name": {
+      "common": "Russia",
+      "official": "Russian Federation",
+      "native": {
+        "rus": {
+          "official": "\u0420\u0443\u0441\u0441\u043a\u0430\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u044f",
+          "common": "\u0420\u043e\u0441\u0441\u0438\u044f"
+        }
+      }
+    },
+    "tld": [".ru", ".su", ".\u0440\u0444"],
+    "cca2": "RU",
+    "ccn3": "643",
+    "cca3": "RUS",
+    "currency": ["RUB"],
+    "callingCode": ["7"],
+    "capital": "Moscow",
+    "altSpellings": ["RU", "Rossiya", "Russian Federation", "\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u044f", "Rossiyskaya Federatsiya"],
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "languages": ["Russian"],
+    "translations": {
+      "deu": {"official": "russische F\u00f6deration", "common": "Russland"},
+      "fra": {"official": "F\u00e9d\u00e9ration de Russie", "common": "Russie"},
+      "hrv": {"official": "Ruska Federacija", "common": "Rusija"},
+      "ita": {"official": "Federazione russa", "common": "Russia"},
+      "jpn": {"official": "\u30ed\u30b7\u30a2\u9023\u90a6", "common": "\u30ed\u30b7\u30a2\u9023\u90a6"},
+      "nld": {"official": "Russische Federatie", "common": "Rusland"},
+      "por": {"official": "Federa\u00e7\u00e3o Russa", "common": "R\u00fassia"},
+      "rus": {"official": "\u0420\u043e\u0441\u0441\u0438\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u044f", "common": "\u0420\u043e\u0441\u0441\u0438\u044f"},
+      "spa": {"official": "Federaci\u00f3n de Rusia", "common": "Rusia"}
+    },
+    "latlng": [55.755826, 37.6173],
+    "demonym": "Russian",
+    "landlocked": false,
+    "borders": ["AZE", "BLR", "CHN", "EST", "FIN", "GEO", "KAZ", "PRK", "LVA", "LTU", "MNG", "NOR", "POL", "UKR"],
+    "area": 17098242
+  },
+  {
+    "name": {
+      "common": "Saudi Arabia",
+      "official": "Kingdom of Saudi Arabia",
+      "native": {
+        "ara": {
+          "official": "\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629",
+          "common": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629"
+        }
+      }
+    },
+    "tld": [".sa", ".\u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629"],
+    "cca2": "SA",
+    "ccn3": "682",
+    "cca3": "SAU",
+    "currency": ["SAR"],
+    "callingCode": ["966"],
+    "capital": "Riyadh",
+    "altSpellings": ["Saudi", "SA", "Kingdom of Saudi Arabia", "Al-Mamlakah al-\u2018Arabiyyah as-Su\u2018\u016bdiyyah"],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": ["Arabic"],
+    "translations": {
+      "deu": {"official": "K\u00f6nigreich Saudi-Arabien", "common": "Saudi-Arabien"},
+      "fra": {"official": "Royaume d'Arabie Saoudite", "common": "Arabie Saoudite"},
+      "hrv": {"official": "Kraljevina Saudijska Arabija", "common": "Saudijska Arabija"},
+      "ita": {"official": "Arabia Saudita", "common": "Arabia Saudita"},
+      "jpn": {"official": "\u30b5\u30a6\u30b8\u30a2\u30e9\u30d3\u30a2\u738b\u56fd", "common": "\u30b5\u30a6\u30b8\u30a2\u30e9\u30d3\u30a2"},
+      "nld": {"official": "Koninkrijk van Saoedi-Arabi\u00eb", "common": "Saoedi-Arabi\u00eb"},
+      "por": {"official": "Reino da Ar\u00e1bia Saudita", "common": "Ar\u00e1bia Saudita"},
+      "rus": {"official": "\u041a\u043e\u0440\u043e\u043b\u0435\u0432\u0441\u0442\u0432\u043e \u0421\u0430\u0443\u0434\u043e\u0432\u0441\u043a\u0430\u044f \u0410\u0440\u0430\u0432\u0438\u044f", "common": "\u0421\u0430\u0443\u0434\u043e\u0432\u0441\u043a\u0430\u044f \u0410\u0440\u0430\u0432\u0438\u044f"},
+      "spa": {"official": "Reino de Arabia Saudita", "common": "Arabia Saud\u00ed"}
+    },
+    "latlng": [24.633333, 46.716667],
+    "demonym": "Saudi Arabian",
+    "landlocked": false,
+    "borders": ["IRQ", "JOR", "KWT", "OMN", "QAT", "ARE", "YEM"],
+    "area": 2149690
+  },
+  {
+    "name": {
+      "common": "Somalia",
+      "official": "Federal Republic of Somalia",
+      "native": {
+        "ara": {
+          "official": "\u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u0627\u0644\u0635\u0648\u0645\u0627\u0644\u200e\u200e",
+          "common": "\u0627\u0644\u0635\u0648\u0645\u0627\u0644\u200e\u200e"
+        },
+        "som": {
+          "official": "Jamhuuriyadda Federaalka Soomaaliya",
+          "common": "Soomaaliya"
+        }
+      }
+    },
+    "tld": [".so"],
+    "cca2": "SO",
+    "ccn3": "706",
+    "cca3": "SOM",
+    "currency": ["SOS"],
+    "callingCode": ["252"],
+    "capital": "Mogadishu",
+    "altSpellings": ["SO", "a\u1e63-\u1e62\u016bm\u0101l", "Federal Republic of Somalia", "Jamhuuriyadda Federaalka Soomaaliya", "Jumh\u016briyyat a\u1e63-\u1e62\u016bm\u0101l al-Fider\u0101liyya"],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": ["Arabic", "Somali"],
+    "translations": {
+      "deu": {"official": "Bundesrepublik Somalia", "common": "Somalia"},
+      "fra": {"official": "R\u00e9publique f\u00e9d\u00e9rale de la Somalie", "common": "Somalie"},
+      "hrv": {"official": "Savezna Republika Somaliji", "common": "Somalija"},
+      "ita": {"official": "Repubblica federale di Somalia", "common": "Somalia"},
+      "jpn": {"official": "\u30bd\u30de\u30ea\u30a2\u9023\u90a6\u5171\u548c\u56fd", "common": "\u30bd\u30de\u30ea\u30a2"},
+      "nld": {"official": "Federale Republiek Somali\u00eb", "common": "Somali\u00eb"},
+      "por": {"official": "Rep\u00fablica Federal da Som\u00e1lia", "common": "Som\u00e1lia"},
+      "rus": {"official": "\u0424\u0435\u0434\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0421\u043e\u043c\u0430\u043b\u0438", "common": "\u0421\u043e\u043c\u0430\u043b\u0438"},
+      "spa": {"official": "Rep\u00fablica Federal de Somalia", "common": "Somalia"}
+    },
+    "latlng": [2.033333, 45.35],
+    "demonym": "Somali",
+    "landlocked": false,
+    "borders": ["DJI", "ETH", "KEN"],
+    "area": 637657
+  },
+  {
+    "name": {
+      "common": "Sweden",
+      "official": "Kingdom of Sweden",
+      "native": {
+        "swe": {
+          "official": "Konungariket Sverige",
+          "common": "Sverige"
+        }
+      }
+    },
+    "tld": [".se"],
+    "cca2": "SE",
+    "ccn3": "752",
+    "cca3": "SWE",
+    "currency": ["SEK"],
+    "callingCode": ["46"],
+    "capital": "Stockholm",
+    "altSpellings": ["SE", "Kingdom of Sweden", "Konungariket Sverige"],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": ["Swedish"],
+    "translations": {
+      "deu": {"official": "K\u00f6nigreich Schweden", "common": "Schweden"},
+      "fra": {"official": "Royaume de Su\u00e8de", "common": "Su\u00e8de"},
+      "hrv": {"official": "Kraljevina \u0160vedska", "common": "\u0160vedska"},
+      "ita": {"official": "Regno di Svezia", "common": "Svezia"},
+      "jpn": {"official": "\u30b9\u30a6\u30a7\u30fc\u30c7\u30f3\u738b\u56fd", "common": "\u30b9\u30a6\u30a7\u30fc\u30c7\u30f3"},
+      "nld": {"official": "Koninkrijk Zweden", "common": "Zweden"},
+      "por": {"official": "Reino da Su\u00e9cia", "common": "Su\u00e9cia"},
+      "rus": {"official": "\u041a\u043e\u0440\u043e\u043b\u0435\u0432\u0441\u0442\u0432\u043e \u0428\u0432\u0435\u0446\u0438\u044f", "common": "\u0428\u0432\u0435\u0446\u0438\u044f"},
+      "spa": {"official": "Reino de Suecia", "common": "Suecia"}
+    },
+    "latlng": [59.329323, 18.068581],
+    "demonym": "Swedish",
+    "landlocked": false,
+    "borders": ["FIN", "NOR"],
+    "area": 450295
+  },
+  {
+    "name": {
+      "common": "Thailand",
+      "official": "Kingdom of Thailand",
+      "native": {
+        "tha": {
+          "official": "\u0e23\u0e32\u0e0a\u0e2d\u0e32\u0e13\u0e32\u0e08\u0e31\u0e01\u0e23\u0e44\u0e17\u0e22",
+          "common": "\u0e1b\u0e23\u0e30\u0e40\u0e17\u0e28\u0e44\u0e17\u0e22"
+        }
+      }
+    },
+    "tld": [".th", ".\u0e44\u0e17\u0e22"],
+    "cca2": "TH",
+    "ccn3": "764",
+    "cca3": "THA",
+    "currency": ["THB"],
+    "callingCode": ["66"],
+    "capital": "Bangkok",
+    "altSpellings": ["TH", "Prathet", "Thai", "Kingdom of Thailand", "\u0e23\u0e32\u0e0a\u0e2d\u0e32\u0e13\u0e32\u0e08\u0e31\u0e01\u0e23\u0e44\u0e17\u0e22", "Ratcha Anachak Thai"],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "languages": ["Thai"],
+    "translations": {
+      "deu": {"official": "K\u00f6nigreich Thailand", "common": "Thailand"},
+      "fra": {"official": "Royaume de Tha\u00eflande", "common": "Tha\u00eflande"},
+      "hrv": {"official": "Kraljevina Tajland", "common": "Tajland"},
+      "ita": {"official": "Regno di Thailandia", "common": "Tailandia"},
+      "jpn": {"official": "\u30bf\u30a4\u738b\u56fd", "common": "\u30bf\u30a4"},
+      "nld": {"official": "Koninkrijk Thailand", "common": "Thailand"},
+      "por": {"official": "Reino da Tail\u00e2ndia", "common": "Tail\u00e2ndia"},
+      "rus": {"official": "\u041a\u043e\u0440\u043e\u043b\u0435\u0432\u0441\u0442\u0432\u043e \u0422\u0430\u0438\u043b\u0430\u043d\u0434", "common": "\u0422\u0430\u0438\u043b\u0430\u043d\u0434"},
+      "spa": {"official": "Reino de Tailandia", "common": "Tailandia"}
+    },
+    "latlng": [13.756331, 100.501765],
+    "demonym": "Thai",
+    "landlocked": false,
+    "borders": ["MMR", "KHM", "LAO", "MYS"],
+    "area": 513120
+  },
+  {
+    "name": {
+      "common": "Turkey",
+      "official": "Republic of Turkey",
+      "native": {
+        "tur": {
+          "official": "T\u00fcrkiye Cumhuriyeti",
+          "common": "T\u00fcrkiye"
+        }
+      }
+    },
+    "tld": [".tr"],
+    "cca2": "TR",
+    "ccn3": "792",
+    "cca3": "TUR",
+    "currency": ["TRY"],
+    "callingCode": ["90"],
+    "capital": "Ankara",
+    "altSpellings": ["TR", "Turkiye", "Republic of Turkey", "T\u00fcrkiye Cumhuriyeti"],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": ["Turkish"],
+    "translations": {
+      "deu": {"official": "Republik T\u00fcrkei", "common": "T\u00fcrkei"},
+      "fra": {"official": "R\u00e9publique de Turquie", "common": "Turquie"},
+      "hrv": {"official": "Republika Turska", "common": "Turska"},
+      "ita": {"official": "Repubblica di Turchia", "common": "Turchia"},
+      "jpn": {"official": "\u30c8\u30eb\u30b3\u5171\u548c\u56fd", "common": "\u30c8\u30eb\u30b3"},
+      "nld": {"official": "Republiek Turkije", "common": "Turkije"},
+      "por": {"official": "Rep\u00fablica da Turquia", "common": "Turquia"},
+      "rus": {"official": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0422\u0443\u0440\u0446\u0438\u0438", "common": "\u0422\u0443\u0440\u0446\u0438\u044f"},
+      "spa": {"official": "Rep\u00fablica de Turqu\u00eda", "common": "Turqu\u00eda"}
+    },
+    "latlng": [39.920770, 32.85411],
+    "demonym": "Turkish",
+    "landlocked": false,
+    "borders": ["ARM", "AZE", "BGR", "GEO", "GRC", "IRN", "IRQ", "SYR"],
+    "area": 783562
+  },
+  {
+    "name": {
+      "common": "Ukraine",
+      "official": "Ukraine",
+      "native": {
+        "rus": {
+          "official": "\u0423\u043a\u0440\u0430\u0438\u043d\u0430",
+          "common": "\u0423\u043a\u0440\u0430\u0438\u043d\u0430"
+        },
+        "ukr": {
+          "official": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+          "common": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+        }
+      }
+    },
+    "tld": [".ua", ".\u0443\u043a\u0440"],
+    "cca2": "UA",
+    "ccn3": "804",
+    "cca3": "UKR",
+    "currency": ["UAH"],
+    "callingCode": ["380"],
+    "capital": "Kiev",
+    "altSpellings": ["UA", "Ukrayina"],
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "languages": ["Russian", "Ukrainian"],
+    "translations": {
+      "deu": {"official": "Ukraine", "common": "Ukraine"},
+      "fra": {"official": "Ukraine", "common": "Ukraine"},
+      "hrv": {"official": "Ukrajina", "common": "Ukrajina"},
+      "ita": {"official": "Ucraina", "common": "Ucraina"},
+      "jpn": {"official": "\u30a6\u30af\u30e9\u30a4\u30ca", "common": "\u30a6\u30af\u30e9\u30a4\u30ca"},
+      "nld": {"official": "Oekra\u00efne", "common": "Oekra\u00efne"},
+      "por": {"official": "Ucr\u00e2nia", "common": "Ucr\u00e2nia"},
+      "rus": {"official": "\u0423\u043a\u0440\u0430\u0438\u043d\u0430", "common": "\u0423\u043a\u0440\u0430\u0438\u043d\u0430"},
+      "spa": {"official": "Ucrania", "common": "Ucrania"}
+    },
+    "latlng": [50.450100, 30.5234],
+    "demonym": "Ukrainian",
+    "landlocked": false,
+    "borders": ["BLR", "HUN", "MDA", "POL", "ROU", "RUS", "SVK"],
+    "area": 603500
+  },
+  {
+    "name": {
+      "common": "United States",
+      "official": "United States of America",
+      "native": {
+        "eng": {
+          "official": "United States of America",
+          "common": "United States"
+        }
+      }
+    },
+    "tld": [".us"],
+    "cca2": "US",
+    "ccn3": "840",
+    "cca3": "USA",
+    "currency": ["USD", "USN", "USS"],
+    "callingCode": ["1"],
+    "capital": "Washington D.C.",
+    "altSpellings": ["US", "USA", "United States of America"],
+    "region": "The Americas",
+    "subregion": "Northern America",
+    "languages": ["English"],
+    "translations": {
+      "deu": {"official": "Vereinigte Staaten von Amerika", "common": "Vereinigte Staaten von Amerika"},
+      "fra": {"official": "Les \u00e9tats-unis d'Am\u00e9rique", "common": "\u00c9tats-Unis"},
+      "hrv": {"official": "Sjedinjene Dr\u017eave Amerike", "common": "Sjedinjene Ameri\u010dke Dr\u017eave"},
+      "ita": {"official": "Stati Uniti d'America", "common": "Stati Uniti D'America"},
+      "jpn": {"official": "\u30a2\u30e1\u30ea\u30ab\u5408\u8846\u56fd", "common": "\u30a2\u30e1\u30ea\u30ab\u5408\u8846\u56fd"},
+      "nld": {"official": "Verenigde Staten van Amerika", "common": "Verenigde Staten"},
+      "por": {"official": "Estados Unidos da Am\u00e9rica", "common": "Estados Unidos"},
+      "rus": {"official": "\u0421\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u043d\u044b\u0435 \u0428\u0442\u0430\u0442\u044b \u0410\u043c\u0435\u0440\u0438\u043a\u0438", "common": "\u0421\u043e\u0435\u0434\u0438\u043d\u0451\u043d\u043d\u044b\u0435 \u0428\u0442\u0430\u0442\u044b \u0410\u043c\u0435\u0440\u0438\u043a\u0438"},
+      "spa": {"official": "Estados Unidos de Am\u00e9rica", "common": "Estados Unidos"}
+    },
+    "latlng": [38.907192, -77.036871],
+    "demonym": "American",
+    "landlocked": false,
+    "borders": ["CAN", "MEX"],
+    "area": 9372610
+  },
+  {
+    "name": {
+      "common": "Venezuela",
+      "official": "Bolivarian Republic of Venezuela",
+      "native": {
+        "spa": {
+          "official": "Rep\u00fablica Bolivariana de Venezuela",
+          "common": "Venezuela"
+        }
+      }
+    },
+    "tld": [".ve"],
+    "cca2": "VE",
+    "ccn3": "862",
+    "cca3": "VEN",
+    "currency": ["VEF"],
+    "callingCode": ["58"],
+    "capital": "Caracas",
+    "altSpellings": ["VE", "Bolivarian Republic of Venezuela", "Rep\u00fablica Bolivariana de Venezuela"],
+    "region": "The Americas",
+    "subregion": "South America",
+    "languages": ["Spanish"],
+    "translations": {
+      "deu": {"official": "Bolivarische Republik Venezuela", "common": "Venezuela"},
+      "fra": {"official": "R\u00e9publique bolivarienne du Venezuela", "common": "Venezuela"},
+      "hrv": {"official": "BOLIVARIJANSKA Republika Venezuela", "common": "Venezuela"},
+      "ita": {"official": "Repubblica Bolivariana del Venezuela", "common": "Venezuela"},
+      "jpn": {"official": "\u30d9\u30cd\u30ba\u30a8\u30e9\u00b7\u30dc\u30ea\u30d0\u30eb\u5171\u548c\u56fd", "common": "\u30d9\u30cd\u30ba\u30a8\u30e9\u30fb\u30dc\u30ea\u30d0\u30eb\u5171\u548c\u56fd"},
+      "nld": {"official": "Bolivariaanse Republiek Venezuela", "common": "Venezuela"},
+      "por": {"official": "Rep\u00fablica Bolivariana da Venezuela", "common": "Venezuela"},
+      "rus": {"official": "\u0411\u043e\u043b\u0438\u0432\u0430\u0440\u0438\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0412\u0435\u043d\u0435\u0441\u0443\u044d\u043b\u0430", "common": "\u0412\u0435\u043d\u0435\u0441\u0443\u044d\u043b\u0430"},
+      "spa": {"official": "Rep\u00fablica Bolivariana de Venezuela", "common": "Venezuela"}
+    },
+    "latlng": [10.469640, -66.803719],
+    "demonym": "Venezuelan",
+    "landlocked": false,
+    "borders": ["BRA", "COL", "GUY"],
+    "area": 916445
+  },
+  {
+    "name": {
+      "common": "Vietnam",
+      "official": "Socialist Republic of Vietnam",
+      "native": {
+        "vie": {
+          "official": "C\u1ed9ng h\u00f2a x\u00e3 h\u1ed9i ch\u1ee7 ngh\u0129a Vi\u1ec7t Nam",
+          "common": "Vi\u1ec7t Nam"
+        }
+      }
+    },
+    "tld": [".vn"],
+    "cca2": "VN",
+    "ccn3": "704",
+    "cca3": "VNM",
+    "currency": ["VND"],
+    "callingCode": ["84"],
+    "capital": "Hanoi",
+    "altSpellings": ["VN", "Socialist Republic of Vietnam", "C\u1ed9ng h\u00f2a X\u00e3 h\u1ed9i ch\u1ee7 ngh\u0129a Vi\u1ec7t Nam"],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "languages": ["Vietnamese"],
+    "translations": {
+      "deu": {"official": "Sozialistische Republik Vietnam", "common": "Vietnam"},
+      "fra": {"official": "R\u00e9publique socialiste du Vietnam", "common": "Vi\u00eat Nam"},
+      "hrv": {"official": "Socijalisti\u010dka Republika Vijetnam", "common": "Vijetnam"},
+      "ita": {"official": "Repubblica socialista del Vietnam", "common": "Vietnam"},
+      "jpn": {"official": "\u30d9\u30c8\u30ca\u30e0\u793e\u4f1a\u4e3b\u7fa9\u5171\u548c\u56fd", "common": "\u30d9\u30c8\u30ca\u30e0"},
+      "nld": {"official": "Socialistische Republiek Vietnam", "common": "Vietnam"},
+      "por": {"official": "Rep\u00fablica Socialista do Vietname", "common": "Vietname"},
+      "rus": {"official": "\u0421\u043e\u0446\u0438\u0430\u043b\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0412\u044c\u0435\u0442\u043d\u0430\u043c", "common": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c"},
+      "spa": {"official": "Rep\u00fablica Socialista de Vietnam", "common": "Vietnam"}
+    },
+    "latlng": [21.027764, 105.83416],
+    "demonym": "Vietnamese",
+    "landlocked": false,
+    "borders": ["KHM", "CHN", "LAO"],
+    "area": 331212
+  },
+  {
+    "name": {
+      "common": "South Africa",
+      "official": "Republic of South Africa",
+      "native": {
+        "afr": {
+          "official": "Republiek van Suid-Afrika",
+          "common": "South Africa"
+        },
+        "eng": {
+          "official": "Republic of South Africa",
+          "common": "South Africa"
+        },
+        "nbl": {
+          "official": "IRiphabliki yeSewula Afrika",
+          "common": "Sewula Afrika"
+        },
+        "nso": {
+          "official": "Rephaboliki ya Afrika-Borwa ",
+          "common": "Afrika-Borwa"
+        },
+        "sot": {
+          "official": "Rephaboliki ya Afrika Borwa",
+          "common": "Afrika Borwa"
+        },
+        "ssw": {
+          "official": "IRiphabhulikhi yeNingizimu Afrika",
+          "common": "Ningizimu Afrika"
+        },
+        "tsn": {
+          "official": "Rephaboliki ya Aforika Borwa",
+          "common": "Aforika Borwa"
+        },
+        "tso": {
+          "official": "Riphabliki ra Afrika Dzonga",
+          "common": "Afrika Dzonga"
+        },
+        "ven": {
+          "official": "Riphabu\u1e3diki ya Afurika Tshipembe",
+          "common": "Afurika Tshipembe"
+        },
+        "xho": {
+          "official": "IRiphabliki yaseMzantsi Afrika",
+          "common": "Mzantsi Afrika"
+        },
+        "zul": {
+          "official": "IRiphabliki yaseNingizimu Afrika",
+          "common": "Ningizimu Afrika"
+        }
+      }
+    },
+    "tld": [".za"],
+    "cca2": "ZA",
+    "ccn3": "710",
+    "cca3": "ZAF",
+    "currency": ["ZAR"],
+    "callingCode": ["27"],
+    "capital": "Pretoria",
+    "altSpellings": ["ZA", "RSA", "Suid-Afrika", "Republic of South Africa"],
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "languages": ["Afrikaans", "English", "Southern Ndebele", "Northern Sotho", "Southern Sotho", "Swazi", "Tswana", "Tsonga", "Venda", "Xhosa", "Zulu"],
+    "translations": {
+      "deu": {"official": "Republik S\u00fcdafrika", "common": "Republik S\u00fcdafrika"},
+      "fra": {"official": "R\u00e9publique d'Afrique du Sud", "common": "Afrique du Sud"},
+      "hrv": {"official": "Ju\u017enoafri\u010dka Republika", "common": "Ju\u017enoafri\u010dka Republika"},
+      "ita": {"official": "Repubblica del Sud Africa", "common": "Sud Africa"},
+      "jpn": {"official": "\u5357\u30a2\u30d5\u30ea\u30ab\u5171\u548c\u56fd", "common": "\u5357\u30a2\u30d5\u30ea\u30ab"},
+      "nld": {"official": "Zuid -Afrika", "common": "Zuid-Afrika"},
+      "por": {"official": "Rep\u00fablica da \u00c1frica do Sul", "common": "\u00c1frica do Sul"},
+      "rus": {"official": "\u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430", "common": "\u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430"},
+      "spa": {"official": "Rep\u00fablica de Sud\u00e1frica", "common": "Rep\u00fablica de Sud\u00e1frica"}
+    },
+    "latlng": [-25.746111, 28.188056],
+    "demonym": "South African",
+    "landlocked": false,
+    "borders": ["BWA", "LSO", "MOZ", "NAM", "SWZ", "ZWE"],
+    "area": 1221037
+  }
+]
