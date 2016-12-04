@@ -34,6 +34,7 @@ import com.google.android.gms.maps.model.MapStyleOptions;
 
 
 import android.os.Bundle;
+import android.os.Debug;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -326,6 +327,7 @@ public class CapitalGuessActivity extends AppCompatActivity
         }
         boolean previouslyDone = false;
         do{
+
             currentRandomIndex = (int)Math.floor( Math.random() * (double)m_NumberOfCountries);
             previouslyDone = false;
             for (int i = 0; i < m_PreviouslySelectedCountries.size(); ++i)
@@ -343,6 +345,8 @@ public class CapitalGuessActivity extends AppCompatActivity
         m_PreviouslySelectedCountries.add(currentRandomIndex);
 
         double lat, lng;
+        Log.v(DEBUGTAG, "Max number of countries " + m_NumberOfCountries);
+        Log.v(DEBUGTAG, "Max number of countries from json" + m_Data.size());
         lat = (double)m_Data.get(currentRandomIndex).getJSONArray("latlng").get(0);
         lng = (double)m_Data.get(currentRandomIndex).getJSONArray("latlng").get(1);
         m_MapCenter =  new LatLng(lat, lng);
@@ -528,6 +532,7 @@ public class CapitalGuessActivity extends AppCompatActivity
                 m_NumberOfCountries = 50;
                 break;
         }
+        Log.v(DEBUGTAG, "Loading " + loadedFilename);
         JSONArray jArray = new JSONArray();
 
         String s = loadJSONFromAsset(loadedFilename);
