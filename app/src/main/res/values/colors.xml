@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#1d5fa1</color>
-    <color name="Menu_Main">#b12525</color>
+    <color name="Menu_Main">#cd0000</color>
     <color name="Menu_Game">#b12525</color>
     <color name="colorPrimaryDark">#303f9f</color>
     <color name="colorAccent">#FF4081</color>

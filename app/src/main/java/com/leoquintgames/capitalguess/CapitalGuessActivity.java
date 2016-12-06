@@ -16,10 +16,14 @@
 
 package com.leoquintgames.capitalguess;
 
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.games.Games;
 
+import com.google.android.gms.vision.text.Text;
 import com.google.example.games.basegameutils.BaseGameUtils;
 import java.lang.Math;
 import java.io.IOException;
@@ -33,6 +37,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MapStyleOptions;
 
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Debug;
 import android.support.annotation.NonNull;
@@ -75,7 +80,7 @@ public class CapitalGuessActivity extends AppCompatActivity
     private LinearLayout m_GameClueOverlay;
     private LinearLayout m_GameBottomBarOverlay;
 
-    //Clue text display refrences
+    //Clue text display references
     private TextView m_Clue_One_Display;
     private TextView m_Clue_Two_Display;
     private TextView m_Clue_Three_Display;
@@ -86,10 +91,18 @@ public class CapitalGuessActivity extends AppCompatActivity
     private RadioButton m_RadioDiff_2;
     private RadioButton m_RadioDiff_3;
 
+    //Scoring
+    private TextView m_ScoreDisplay;
+
+    //EndGame Panel
+    private TextView m_EndGameScore;
+    private TextView m_QuirkyMessage;
+    private TextView m_EndGameStats;
+
     //endregion
 
     //region Game Variables
-    private int m_NumberOfRounds = 10;
+    private int m_NumberOfRounds = 3;
     private int m_CurrentRound = 0;
     private int m_Zoom = 16;
     private int m_CurrentGuess = 0;
@@ -99,6 +112,9 @@ public class CapitalGuessActivity extends AppCompatActivity
     private ArrayList<Integer> m_PreviouslySelectedCountries = new ArrayList<Integer>();
     private ArrayList<JSONObject> m_Data = new ArrayList<JSONObject>();
     private int currentRandomIndex = 0;
+    private int gameMode = 0; // 0 = Capitals, 1 = Country
+    private float m_Score = 0;
+    private int m_PointsPerGuess = 10; // must be at least 9 or else you have to change the hint penalty
     //endregion
 
     //region Google play services
@@ -119,12 +135,14 @@ public class CapitalGuessActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
 
         // Create the Google Api Client with access to the Play Games services
+        // ATTENTION: This "addApi(AppIndex.API)"was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
                 .addOnConnectionFailedListener(this)
                 .addApi(Games.API).addScope(Games.SCOPE_GAMES)
                 // add other APIs and scopes here as needed
-                .build();
+                .addApi(AppIndex.API).build();
 
 
         setContentView(R.layout.capital_guess);
@@ -137,7 +155,7 @@ public class CapitalGuessActivity extends AppCompatActivity
         mapFragment.getMapAsync(this);
 
         //region References to UI
-        //Referencing menues
+        //Referencing menus
         m_MainMenu = (FrameLayout) findViewById(R.id.Main_Menu);//Layer->0
         m_GameOptionsMenu = (FrameLayout) findViewById(R.id.Game_Options_Menu);//Layer->1
         m_SettingsMenu = (LinearLayout) findViewById(R.id.Settings_Menu);//Layer->2
@@ -145,7 +163,7 @@ public class CapitalGuessActivity extends AppCompatActivity
         m_EndGameOverlay = (LinearLayout) findViewById(R.id.EndScreen);//Layer->4
         m_GameClueOverlay = (LinearLayout) findViewById(R.id.ClueLayout);
         m_GameBottomBarOverlay = (LinearLayout) findViewById(R.id.KeyboardLayout);
-        //Setting the menues to default state on start
+        //Setting the menus to default state on start
         changeMenu(0);
         //Referencing the Clue fields
         m_Clue_One_Display = (TextView) findViewById((R.id.clue1));
@@ -157,9 +175,15 @@ public class CapitalGuessActivity extends AppCompatActivity
         m_RadioDiff_1 = (RadioButton) findViewById(R.id.diffselect1);
         m_RadioDiff_2 = (RadioButton) findViewById(R.id.diffselect2);
         m_RadioDiff_3 = (RadioButton) findViewById(R.id.diffselect3);
+        //Referencing EndGame Panel
+        m_EndGameScore = (TextView) findViewById(R.id.text_end_game_score);
+        m_QuirkyMessage = (TextView) findViewById(R.id.text_kirky);
+        m_EndGameStats = (TextView) findViewById(R.id.text_end_game_stats);
+        //Scoring
+        m_ScoreDisplay = (TextView) findViewById(R.id.text_score);
         //endregion
 
-
+        //region Button Setup
         final Button btn_Settings = (Button) findViewById(R.id.btn_Settings);
         btn_Settings.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -169,12 +193,14 @@ public class CapitalGuessActivity extends AppCompatActivity
         final Button btn_Capitals = (Button) findViewById(R.id.btn_Capital_Mode);
         btn_Capitals.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                gameMode = 0;
                 changeMenu(1);
             }
         });
         final Button btn_Country = (Button) findViewById(R.id.btn_Country_Mode);
         btn_Country.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                gameMode = 1;
                 changeMenu(1);
             }
         });
@@ -188,12 +214,22 @@ public class CapitalGuessActivity extends AppCompatActivity
         btn_BackToMainMenuFromEndScreen.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 changeMenu(0);
+                try {
+                    setNewLocation();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
             }
         });
         final Button btn_StartGame = (Button) findViewById(R.id.btn_Start);
         btn_StartGame.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 changeMenu(3);
+                try {
+                    displayClues(); //necessary hack, ask Grant for #s. Has to do with country mode.
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
             }
         });
         final Button btn_BackToMainMenuFromGameOptions = (Button) findViewById(R.id.btn_BackToMainMenuFromGameOptions);
@@ -202,12 +238,23 @@ public class CapitalGuessActivity extends AppCompatActivity
                 changeMenu(0);
             }
         });
+        final Button btn_PlayAgain = (Button) findViewById(R.id.btn_play_again);
+        btn_PlayAgain.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                changeMenu(3);
+                try {
+                    setNewLocation();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
         final EditText inputPlayer = (EditText) findViewById(R.id.input_player);
-        inputPlayer.setOnKeyListener(new EditText.OnKeyListener()
-                                     {
-                                         public boolean onKey(View v, int keyCode, KeyEvent event)
-                                         {
-                                             if(keyCode == 66 && event.getAction() == 1) //66 = enter/return, 1 = key release
+        inputPlayer.setOnKeyListener(new EditText.OnKeyListener() {
+                                         public boolean onKey(View v, int keyCode, KeyEvent event) {
+                                             if (keyCode == 66 && event.getAction() == 1) //66 = enter/return, 1 = key release
                                              {
                                                  try {
                                                      submitGuess(inputPlayer.getText().toString());
@@ -220,10 +267,12 @@ public class CapitalGuessActivity extends AppCompatActivity
                                          }
                                      }
         );
+        //endregion
     }
 
     @Override
     public void onMapReady(GoogleMap map) {
+
 
         m_Map = map;
 
@@ -247,6 +296,8 @@ public class CapitalGuessActivity extends AppCompatActivity
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
+        changeMenu(0);
     }
 
     //region Navigation
@@ -322,6 +373,7 @@ public class CapitalGuessActivity extends AppCompatActivity
         m_CurrentRound++;
         Log.v(DEBUGTAG, "Round #" + m_CurrentRound + " of " + m_NumberOfRounds);
         if(m_CurrentRound > m_NumberOfRounds){
+            Log.v(DEBUGTAG, "trying to end game");
             endGame();
             return;
         }
@@ -345,8 +397,8 @@ public class CapitalGuessActivity extends AppCompatActivity
         m_PreviouslySelectedCountries.add(currentRandomIndex);
 
         double lat, lng;
-        Log.v(DEBUGTAG, "Max number of countries " + m_NumberOfCountries);
-        Log.v(DEBUGTAG, "Max number of countries from json" + m_Data.size());
+        //Log.v(DEBUGTAG, "Max number of countries " + m_NumberOfCountries);
+        //Log.v(DEBUGTAG, "Max number of countries from json" + m_Data.size());
         lat = (double)m_Data.get(currentRandomIndex).getJSONArray("latlng").get(0);
         lng = (double)m_Data.get(currentRandomIndex).getJSONArray("latlng").get(1);
         m_MapCenter =  new LatLng(lat, lng);
@@ -391,32 +443,61 @@ public class CapitalGuessActivity extends AppCompatActivity
             }
             return;
         }
-        String commonName = m_Data.get(currentRandomIndex).getJSONObject("name").getString("common");
-        String officialName = m_Data.get(currentRandomIndex).getJSONObject("name").getString("official");
-        Log.v(DEBUGTAG, input.toUpperCase());
-        Log.v(DEBUGTAG, commonName.toUpperCase());
 
-        if(input.equalsIgnoreCase("sprouts") && commonName.equalsIgnoreCase("belgium")){
-            unlockAchievement(getString(R.string.achievement_eat_them_all_or_no_dessert));
-        }
-        if(input.equalsIgnoreCase("hilton") && commonName.equalsIgnoreCase("france")){
-            unlockAchievement(getString(R.string.achievement_really));
-        }
-        if(input.equalsIgnoreCase(commonName) || input.equalsIgnoreCase(officialName))
+        switch (gameMode)
         {
-            goodGuess();
-            editField.setText("");
-            if (view != null) {
-                InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-                imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
-            }
-            return;
-        }
-        badGuess();
-        editField.setText("");
-        if (view != null) {
-            InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+            case 0:
+                String commonName = m_Data.get(currentRandomIndex).getJSONObject("name").getString("common");
+                String officialName = m_Data.get(currentRandomIndex).getJSONObject("name").getString("official");
+
+                if(input.equalsIgnoreCase("sprouts") && commonName.equalsIgnoreCase("belgium")){
+                    unlockAchievement(getString(R.string.achievement_eat_them_all_or_no_dessert));
+                }
+                if(input.equalsIgnoreCase("hilton") && commonName.equalsIgnoreCase("france")){
+                    unlockAchievement(getString(R.string.achievement_really));
+                }
+                if(input.equalsIgnoreCase("beans") && commonName.equalsIgnoreCase("peru"))
+                {
+                    unlockAchievement(getString(R.string.achievement_heh__beans_));
+                }
+                if(input.equalsIgnoreCase(commonName) || input.equalsIgnoreCase(officialName))
+                {
+                    goodGuess();
+                    editField.setText("");
+                    if (view != null) {
+                        InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+                    }
+                    return;
+                }
+                badGuess();
+                editField.setText("");
+                if (view != null) {
+                    InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+                }
+                break;
+
+            case 1:
+                String capital = m_Data.get(currentRandomIndex).getString("capital");
+                Log.v(DEBUGTAG, m_Data.get(currentRandomIndex).getString("capital"));
+                if(input.equalsIgnoreCase(capital))
+                {
+                    goodGuess();
+                    editField.setText("");
+                    if (view != null) {
+                        InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+                    }
+                    return;
+                }
+                badGuess();
+                editField.setText("");
+                if (view != null) {
+                    InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+                }
+                break;
         }
     }
 
@@ -425,7 +506,8 @@ public class CapitalGuessActivity extends AppCompatActivity
         if(mGoodGuessesInRow >= 5){
             unlockAchievement(getString(R.string.achievement_5_in_a_row));
         }
-
+        m_Score += m_PointsPerGuess - (m_CurrentGuess * 3);
+        m_ScoreDisplay.setText("Score: " + String.valueOf(m_Score));
         setNewLocation();
 
         try { displayClues(); } catch (JSONException e) { e.printStackTrace(); }
@@ -443,9 +525,14 @@ public class CapitalGuessActivity extends AppCompatActivity
         zoomOutCamera(m_CurrentGuess);
         return;
     }
-    public void endGame(){
+    public void endGame() throws JSONException {
+        m_EndGameScore.setText("Final Score: " + String.valueOf(m_Score));
+        m_QuirkyMessage.setText("Good Game!");
+        m_EndGameStats.setText("Your grade: " + String.valueOf(Math.round((m_Score/(m_PointsPerGuess*m_NumberOfRounds)) * 100)) + "%");
         changeMenu(4);
-        Log.v(DEBUGTAG, "End of game!");
+        m_Score = 0;
+        m_CurrentRound = 0;
+        m_ScoreDisplay.setText("Score: 0");
         incrementAchievement(getString(R.string.achievement_just_one_more_game____), 1);
     }
 
@@ -464,9 +551,21 @@ public class CapitalGuessActivity extends AppCompatActivity
                 m_Clue_Two_Display.setVisibility(View.GONE);
                 m_Clue_Three_Display.setVisibility(View.GONE);
                 m_Clue_Four_Display.setVisibility(View.GONE);
+                String newClue1;
                 //set string
-                String newClue1 = "Capital: " +  m_Data.get(currentRandomIndex).getString("capital");
-                m_Clue_One_Display.setText(newClue1);
+                switch (gameMode)
+                {
+                    case 0:
+                        newClue1 = "Capital: " +  m_Data.get(currentRandomIndex).getString("capital");
+                        m_Clue_One_Display.setText(newClue1);
+                        Log.v(DEBUGTAG, "capital mode");
+                        break;
+                    case 1:
+                        newClue1 = "Country: " + m_Data.get(currentRandomIndex).getJSONObject("name").getString("common");
+                        m_Clue_One_Display.setText(newClue1);
+                        Log.v(DEBUGTAG, "country mode");
+                        break;
+                }
                 break;
             case 1:
                 //set visibility
@@ -614,11 +713,16 @@ public class CapitalGuessActivity extends AppCompatActivity
             // auto sign in
             mGoogleApiClient.connect();
         }
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        AppIndex.AppIndexApi.start(mGoogleApiClient, getIndexApiAction());
     }
 
     @Override
     protected void onStop() {
-        super.onStop();
+        super.onStop();// ATTENTION: This was auto-generated to implement the App Indexing API.
+// See https://g.co/AppIndexing/AndroidStudio for more information.
+        AppIndex.AppIndexApi.end(mGoogleApiClient, getIndexApiAction());
         mGoogleApiClient.disconnect();
     }
 
@@ -706,5 +810,21 @@ public class CapitalGuessActivity extends AppCompatActivity
         } else {
             Log.v(DEBUGTAG, "User not signed in!");
         }
+    }
+
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    public Action getIndexApiAction() {
+        Thing object = new Thing.Builder()
+                .setName("CapitalGuess Page") // TODO: Define a title for the content shown.
+                // TODO: Make sure this auto-generated URL is correct.
+                .setUrl(Uri.parse("http://[ENTER-YOUR-URL-HERE]"))
+                .build();
+        return new Action.Builder(Action.TYPE_VIEW)
+                .setObject(object)
+                .setActionStatus(Action.STATUS_TYPE_COMPLETED)
+                .build();
     }
 }
