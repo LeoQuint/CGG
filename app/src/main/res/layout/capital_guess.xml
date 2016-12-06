@@ -219,21 +219,21 @@
                 android:text="@string/btn_Achievements"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/button42"
+                android:id="@+id/btn_achievement"
                 android:layout_weight="1" />
 
             <Button
                 android:text="@string/btn_Leaderboard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/button32"
+                android:id="@+id/btn_leaderboard"
                 android:layout_weight="1" />
 
             <Button
                 android:text="@string/btn_Social"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/button22"
+                android:id="@+id/btn_share"
                 android:layout_weight="1" />
         </LinearLayout>
     </FrameLayout>
@@ -395,7 +395,7 @@
                     android:text="@string/btn_Achievements"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/button4"
+                    android:id="@+id/btn_achievement2"
                     android:layout_weight="1" />
 
                 <Button

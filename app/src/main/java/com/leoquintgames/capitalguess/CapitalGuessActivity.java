@@ -102,7 +102,7 @@ public class CapitalGuessActivity extends AppCompatActivity
     //endregion
 
     //region Game Variables
-    private int m_NumberOfRounds = 3;
+    private int m_NumberOfRounds = 10;
     private int m_CurrentRound = 0;
     private int m_Zoom = 16;
     private int m_CurrentGuess = 0;
@@ -119,7 +119,7 @@ public class CapitalGuessActivity extends AppCompatActivity
 
     //region Google play services
     private static int RC_SIGN_IN = 9001;
-
+    private int REQUEST_ACHIEVEMENTS = 1;
     private boolean mResolvingConnectionFailure = false;
     private boolean mAutoStartSignInflow = true;
     private boolean mSignInClicked = false;
@@ -187,7 +187,29 @@ public class CapitalGuessActivity extends AppCompatActivity
         final Button btn_Settings = (Button) findViewById(R.id.btn_Settings);
         btn_Settings.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                Log.v(DEBUGTAG, "Achievement clicked");
                 changeMenu(2);
+            }
+        });
+        final Button btn_ShowAchievements = (Button) findViewById((R.id.btn_achievement));
+        btn_ShowAchievements.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                if(mGoogleApiClient.isConnected()) {
+                    startActivityForResult(Games.Achievements.getAchievementsIntent(mGoogleApiClient),
+                            REQUEST_ACHIEVEMENTS);
+                    Log.v(DEBUGTAG, "Achievement clicked");
+                }
+
+            }
+        });
+        final Button btn_ShowAchievements2 = (Button) findViewById((R.id.btn_achievement2));
+        btn_ShowAchievements2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                if(mGoogleApiClient.isConnected()) {
+                    startActivityForResult(Games.Achievements.getAchievementsIntent(mGoogleApiClient),
+                            REQUEST_ACHIEVEMENTS);
+                    Log.v(DEBUGTAG, "Achievement clicked");
+                }
             }
         });
         final Button btn_Capitals = (Button) findViewById(R.id.btn_Capital_Mode);
@@ -232,6 +254,7 @@ public class CapitalGuessActivity extends AppCompatActivity
                 }
             }
         });
+
         final Button btn_BackToMainMenuFromGameOptions = (Button) findViewById(R.id.btn_BackToMainMenuFromGameOptions);
         btn_BackToMainMenuFromGameOptions.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
