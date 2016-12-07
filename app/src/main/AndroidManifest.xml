@@ -56,7 +56,7 @@
             android:value="@integer/google_play_services_version"/>
 
 
-        <activity android:name="com.leoquintgames.capitalguess.CapitalGuessActivity">
+        <activity android:name="com.leoquintgames.capitalguess.CapitalGuessActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
