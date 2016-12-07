@@ -372,8 +372,11 @@ public class CapitalGuessActivity extends AppCompatActivity
 
     //region Core Gameplay Functions
     public String loadJSONFromAsset(String filename) throws IOException {
-        Log.v(DEBUGTAG, "Loading JSON");
-        InputStream is = getResources().openRawResource(R.raw.country_list_50);
+        Log.v(DEBUGTAG, "Loading JSON" + filename);
+
+        InputStream is = getResources().openRawResource(
+                getResources().getIdentifier(filename,
+                        "raw", getPackageName()));
         Writer writer = new StringWriter();
         char[] buffer = new char[1024];
         try {
@@ -420,8 +423,8 @@ public class CapitalGuessActivity extends AppCompatActivity
         m_PreviouslySelectedCountries.add(currentRandomIndex);
 
         double lat, lng;
-        //Log.v(DEBUGTAG, "Max number of countries " + m_NumberOfCountries);
-        //Log.v(DEBUGTAG, "Max number of countries from json" + m_Data.size());
+        Log.v(DEBUGTAG, "Max number of countries " + m_NumberOfCountries);
+        Log.v(DEBUGTAG, "Max number of countries from json" + m_Data.size());
         lat = (double)m_Data.get(currentRandomIndex).getJSONArray("latlng").get(0);
         lng = (double)m_Data.get(currentRandomIndex).getJSONArray("latlng").get(1);
         m_MapCenter =  new LatLng(lat, lng);
@@ -634,23 +637,23 @@ public class CapitalGuessActivity extends AppCompatActivity
         String loadedFilename;
         switch(difficulty){
             case 0:
-                loadedFilename = "country_list_50.json";
+                loadedFilename = "country_list_50";
                 m_NumberOfCountries = 50;
                 break;
             case 1:
-                loadedFilename = "country_list_100.json";
+                loadedFilename = "country_list_100";
                 m_NumberOfCountries = 100;
                 break;
             case 2:
-                loadedFilename = "country_list_185.json";
+                loadedFilename = "country_list_185";
                 m_NumberOfCountries = 185;
                 break;
             case 3:
-                loadedFilename = "country_list_238.json";
+                loadedFilename = "country_list_238";
                 m_NumberOfCountries = 238;
                 break;
             default:
-                loadedFilename = "country_list_50.json";
+                loadedFilename = "country_list_50";
                 m_NumberOfCountries = 50;
                 break;
         }
@@ -659,11 +662,14 @@ public class CapitalGuessActivity extends AppCompatActivity
 
         String s = loadJSONFromAsset(loadedFilename);
         jArray = new JSONArray(s);
-
+        m_Data.clear();
+        Log.v(DEBUGTAG ,String.valueOf(m_Data.size()));
+        Log.v(DEBUGTAG ,String.valueOf(jArray.length()));
         for(int i = 0; i < jArray.length(); ++i){
             m_Data.add(new JSONObject(String.valueOf(jArray.get(i))));
         }
 
+        Log.v(DEBUGTAG ,String.valueOf(m_Data.size()));
     }
     //endregion
 
@@ -696,33 +702,33 @@ public class CapitalGuessActivity extends AppCompatActivity
         switch(view.getId()) {
             case R.id.diffselect0:
                 if (checked){
-                    m_RadioDiff_1.setBackground(getDrawable(R.drawable.star_empty));
-                    m_RadioDiff_2.setBackground(getDrawable(R.drawable.star_empty));
-                    m_RadioDiff_3.setBackground(getDrawable(R.drawable.star_empty));
+                    m_RadioDiff_1.setButtonDrawable(getDrawable(R.drawable.star_empty));
+                    m_RadioDiff_2.setButtonDrawable(getDrawable(R.drawable.star_empty));
+                    m_RadioDiff_3.setButtonDrawable(getDrawable(R.drawable.star_empty));
                     loadCountryList(0);
                 }
                     break;
             case R.id.diffselect1:
                 if (checked){
-                    m_RadioDiff_1.setBackground(getDrawable(R.drawable.start_full));
-                    m_RadioDiff_2.setBackground(getDrawable(R.drawable.star_empty));
-                    m_RadioDiff_3.setBackground(getDrawable(R.drawable.star_empty));
+                    m_RadioDiff_1.setButtonDrawable(getDrawable(R.drawable.start_full));
+                    m_RadioDiff_2.setButtonDrawable(getDrawable(R.drawable.star_empty));
+                    m_RadioDiff_3.setButtonDrawable(getDrawable(R.drawable.star_empty));
                     loadCountryList(1);
                 }
                     break;
             case R.id.diffselect2:
                 if (checked){
-                    m_RadioDiff_1.setBackground(getDrawable(R.drawable.start_full));
-                    m_RadioDiff_2.setBackground(getDrawable(R.drawable.start_full));
-                    m_RadioDiff_3.setBackground(getDrawable(R.drawable.star_empty));
+                    m_RadioDiff_1.setButtonDrawable(getDrawable(R.drawable.start_full));
+                    m_RadioDiff_2.setButtonDrawable(getDrawable(R.drawable.start_full));
+                    m_RadioDiff_3.setButtonDrawable(getDrawable(R.drawable.star_empty));
                     loadCountryList(2);
                 }
                     break;
             case R.id.diffselect3:
                 if (checked){
-                    m_RadioDiff_1.setBackground(getDrawable(R.drawable.start_full));
-                    m_RadioDiff_2.setBackground(getDrawable(R.drawable.start_full));
-                    m_RadioDiff_3.setBackground(getDrawable(R.drawable.start_full));
+                    m_RadioDiff_1.setButtonDrawable(getDrawable(R.drawable.start_full));
+                    m_RadioDiff_2.setButtonDrawable(getDrawable(R.drawable.start_full));
+                    m_RadioDiff_3.setButtonDrawable(getDrawable(R.drawable.start_full));
                     loadCountryList(3);
                 }
                     break;
