@@ -23,6 +23,7 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.games.Games;
 
+import com.google.android.gms.vision.Frame;
 import com.google.android.gms.vision.text.Text;
 import com.google.example.games.basegameutils.BaseGameUtils;
 import java.lang.Math;
@@ -35,6 +36,7 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MapStyleOptions;
+import android.os.Handler;
 
 
 import android.net.Uri;
@@ -79,12 +81,15 @@ public class CapitalGuessActivity extends AppCompatActivity
     private LinearLayout m_EndGameOverlay;
     private LinearLayout m_GameClueOverlay;
     private LinearLayout m_GameBottomBarOverlay;
+    private FrameLayout m_CorrectAnswerOverlay;
 
-    //Clue text display references
+    //text display references
     private TextView m_Clue_One_Display;
     private TextView m_Clue_Two_Display;
     private TextView m_Clue_Three_Display;
     private TextView m_Clue_Four_Display;
+    private TextView m_CorrectAnswer_Display;
+
     //radio buttons
     private RadioButton m_RadioDiff_0;
     private RadioButton m_RadioDiff_1;
@@ -115,6 +120,7 @@ public class CapitalGuessActivity extends AppCompatActivity
     private int gameMode = 0; // 0 = Capitals, 1 = Country
     private float m_Score = 0;
     private int m_PointsPerGuess = 10; // must be at least 9 or else you have to change the hint penalty
+    private int m_CorrectAnswerDisplayDuration = 5000; // how long the correct answer gets displayed for in milliseconds.
     //endregion
 
     //region Google play services
@@ -163,13 +169,15 @@ public class CapitalGuessActivity extends AppCompatActivity
         m_EndGameOverlay = (LinearLayout) findViewById(R.id.EndScreen);//Layer->4
         m_GameClueOverlay = (LinearLayout) findViewById(R.id.ClueLayout);
         m_GameBottomBarOverlay = (LinearLayout) findViewById(R.id.KeyboardLayout);
+        m_CorrectAnswerOverlay = (FrameLayout) findViewById(R.id.correctanswer_layout);
         //Setting the menus to default state on start
         changeMenu(0);
-        //Referencing the Clue fields
+        //Referencing the Text
         m_Clue_One_Display = (TextView) findViewById((R.id.clue1));
         m_Clue_Two_Display = (TextView) findViewById((R.id.clue2));
         m_Clue_Three_Display = (TextView) findViewById((R.id.clue3));
         m_Clue_Four_Display = (TextView) findViewById((R.id.clue4));
+        m_CorrectAnswer_Display = (TextView) findViewById(R.id.txt_correct_answer);
         //referencing the radio buttons
         m_RadioDiff_0 = (RadioButton) findViewById(R.id.diffselect0);
         m_RadioDiff_1 = (RadioButton) findViewById(R.id.diffselect1);
@@ -334,6 +342,7 @@ public class CapitalGuessActivity extends AppCompatActivity
                 m_EndGameOverlay.setVisibility(View.GONE);
                 m_GameClueOverlay.setVisibility(View.GONE);
                 m_GameBottomBarOverlay.setVisibility(View.GONE);
+                m_CorrectAnswerOverlay.setVisibility(View.GONE);
                 break;
             case 1: //Game Options Active
                 m_MainMenu.setVisibility(View.GONE);
@@ -343,6 +352,7 @@ public class CapitalGuessActivity extends AppCompatActivity
                 m_EndGameOverlay.setVisibility(View.GONE);
                 m_GameClueOverlay.setVisibility(View.GONE);
                 m_GameBottomBarOverlay.setVisibility(View.GONE);
+                m_CorrectAnswerOverlay.setVisibility(View.GONE);
                 break;
             case 2: //Settings Active
                 m_MainMenu.setVisibility(View.GONE);
@@ -352,6 +362,7 @@ public class CapitalGuessActivity extends AppCompatActivity
                 m_EndGameOverlay.setVisibility(View.GONE);
                 m_GameClueOverlay.setVisibility(View.GONE);
                 m_GameBottomBarOverlay.setVisibility(View.GONE);
+                m_CorrectAnswerOverlay.setVisibility(View.GONE);
                 break;
             case 3: //Gameplay Active
                 m_MainMenu.setVisibility(View.GONE);
@@ -366,6 +377,7 @@ public class CapitalGuessActivity extends AppCompatActivity
                 m_EndGameOverlay.setVisibility(View.VISIBLE);
                 m_GameClueOverlay.setVisibility(View.GONE);
                 m_GameBottomBarOverlay.setVisibility(View.GONE);
+                m_CorrectAnswerOverlay.setVisibility(View.GONE);
         }
     }
     //endregion
@@ -394,6 +406,7 @@ public class CapitalGuessActivity extends AppCompatActivity
     }
 
     private void setNewLocation() throws JSONException {
+        m_CorrectAnswerOverlay.setVisibility(View.GONE);
         m_Zoom = 16;
         m_CurrentGuess = 0;
         m_CurrentRound++;
@@ -496,7 +509,7 @@ public class CapitalGuessActivity extends AppCompatActivity
                     }
                     return;
                 }
-                badGuess();
+                badGuess(commonName, officialName);
                 editField.setText("");
                 if (view != null) {
                     InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -517,7 +530,7 @@ public class CapitalGuessActivity extends AppCompatActivity
                     }
                     return;
                 }
-                badGuess();
+                badGuess(capital, null);
                 editField.setText("");
                 if (view != null) {
                     InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -534,18 +547,42 @@ public class CapitalGuessActivity extends AppCompatActivity
         }
         m_Score += m_PointsPerGuess - (m_CurrentGuess * 3);
         m_ScoreDisplay.setText("Score: " + String.valueOf(m_Score));
+
+
         setNewLocation();
 
         try { displayClues(); } catch (JSONException e) { e.printStackTrace(); }
         return;
     }
 
-    public void badGuess() throws JSONException {
+
+    public void badGuess(String correct , String optional) throws JSONException {
         mGoodGuessesInRow = 0;
         m_CurrentGuess++;
         if(m_CurrentGuess >= 4){
+            String opt = "";
+            if(optional != null && !optional.equalsIgnoreCase(correct))
+            {
+                opt = "\nAlso correct is " + optional;
+            }
+            m_CorrectAnswer_Display.setText("The correct answer was \n " + correct + opt);
+            m_CorrectAnswerOverlay.setVisibility(View.VISIBLE);
             Log.v(DEBUGTAG, "Current guess " + m_CurrentGuess);
-            setNewLocation();
+
+            final Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        setNewLocation();
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }, m_CorrectAnswerDisplayDuration);
+
+
+
         }
         try { displayClues(); } catch (JSONException e) { e.printStackTrace(); }
         zoomOutCamera(m_CurrentGuess);

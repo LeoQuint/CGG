@@ -25,7 +25,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="visible"
+        android:visibility="gone"
         android:id="@+id/Game_Options_Menu">
 
         <ImageView
@@ -314,7 +314,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/Main_Menu"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <ImageView
             android:layout_width="match_parent"
@@ -421,7 +421,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"
+        android:visibility="visible"
         android:id="@+id/Map_Screen">
 
         <fragment
@@ -439,6 +439,25 @@
             app:uiZoomGestures="false"
             app:uiMapToolbar="false"/>
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/correctanswer_layout"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:layout_marginBottom="200dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+
+            <TextView
+                android:text="TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextView"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txt_correct_answer"
+                android:gravity="center" />
+        </FrameLayout>
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -446,7 +465,7 @@
             android:id="@+id/EndScreen"
             android:background="@android:color/holo_blue_dark"
             android:layout_margin="75dp"
-            android:visibility="visible">
+            android:visibility="gone">
 
             <TextView
                 android:text="Score Display"
